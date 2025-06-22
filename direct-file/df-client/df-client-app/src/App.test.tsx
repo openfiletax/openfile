@@ -26,24 +26,6 @@ vi.mock(`react`, async () => {
   };
 });
 
-/**
- * FAIL  src/App.test.tsx > renders Official US Government website banner
- * TestingLibraryElementError: Unable to find an element with the text:
- *   /An official website of the United States government/i. This could be because
- *   the text is broken up by multiple elements. In this case, you can provide a
- *   function for your text matcher to make your matcher more flexible.
- *
- * Ignored nodes: comments, script, style
- * <body>
- *   <div />
- * </body>
- */
-test.skip(`renders Official US Government website banner`, async () => {
-  render(<App />);
-  const usgBanner = await screen.findByText(/An official website of the United States government/i);
-  expect(usgBanner).toBeInTheDocument();
-});
-
 test.skip(`includes 'main' landmark`, async () => {
   render(<App />);
   const mainLandmark = await screen.findByRole(`main`);

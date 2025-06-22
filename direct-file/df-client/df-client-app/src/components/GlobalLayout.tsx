@@ -1,4 +1,4 @@
-import { GovBanner, Grid, GridContainer } from '@trussworks/react-uswds';
+import { Grid, GridContainer } from '@trussworks/react-uswds';
 import { ReactNode, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Routes, Route } from 'react-router-dom';
@@ -52,13 +52,6 @@ function GlobalLayout({
       <SessionManager />
       <AutoLanguageSelector switchLang={switchLang} />
 
-      <div className='bg-ink'>
-        <GovBanner
-          className='gov-banner'
-          aria-label='Official government website'
-          language={locale === `es-US` ? `spanish` : `english`}
-        />
-      </div>
       {(prevOnlineStatus !== online || !online) && <ConnectivityBanner />}
       <Routes>
         <Route

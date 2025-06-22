@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { CommonFooter, CommonOverrideBanner, CommonOverrideDatePicker } from '@irs/df-common';
 
 import { baseRouterPath } from './constants.js';
-import { Banner, PilotBanner, Header, Head, ErrorBoundary } from './components/index.js';
+import { PilotBanner, Header, Head, ErrorBoundary } from './components/index.js';
 import { LandingPageLayout, Providers, ScreenerLayout } from './layouts/index.js';
 import {
   About,
@@ -33,7 +33,6 @@ function App() {
           <a className='usa-skipnav' href='#main'>
             {t(`components.skipLink.label`)}
           </a>
-          <Banner lang={locale} />
           <PilotBanner />
           <Header />
           <Routes>

@@ -144,7 +144,7 @@ services:
       additional_contexts:
         backend: ./backend
       args:
-        VITE_BACKEND_URL: ${VITE_BACKEND_URL}
+        BACKEND_HOSTNAME: "openfile.tax"
         DF_CLIENT_PUBLIC_PATH: "/df/file"
         DF_API_PUBLIC_PATH: "/df/file/api"
         DF_API_PORT: "${DF_CSPSIM_PORT:-8080}"

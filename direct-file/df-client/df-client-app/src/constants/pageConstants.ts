@@ -60,7 +60,7 @@ export const ENVIRONMENT_CONFIGS: Record<EnvironmentName, EnvironmentConfig> = {
     defaultDataImportRolloutBehavior: `DATA_IMPORT_ABOUT_YOU_BASIC_PLUS_IP_PIN_PLUS_W2_PLUS_1099_INT_PLUS_1095_A`,
   },
   OPENFILE: {
-    hostNames: [`http://openfile.tax`],
+    hostNames: [`https://openfile.tax`],
     flowEnabled: true,
     returnTransferEnabled: true,
     developerToolsEnabled: true,

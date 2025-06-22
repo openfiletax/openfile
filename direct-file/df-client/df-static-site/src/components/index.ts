@@ -1,4 +1,3 @@
-export { default as Banner } from './Banner/Banner.js';
 export { default as Breadcrumbs } from './Breadcrumbs/Breadcrumbs.js';
 
 export { default as Centered } from './Content/Centered.js';

@@ -14,7 +14,7 @@ export const REF_LOCATION_VALUE = {
   AUTHSTATE: `df_authorize_state`,
 } as const;
 
-export const environmentNames = [`LOCALHOST`] as const;
+export const environmentNames = [`LOCALHOST`, `OPENFILE`] as const;
 export type EnvironmentName = (typeof environmentNames)[number];
 
 export type EnvironmentConfig = {
@@ -55,6 +55,18 @@ export const ENVIRONMENT_CONFIGS: Record<EnvironmentName, EnvironmentConfig> = {
     preauthUuidEnabled: true,
     isProd: false,
     dataImportMode: `real-api`,
+    isTelemetryEnabled: true,
+    isSpanishEnabled: true,
+    defaultDataImportRolloutBehavior: `DATA_IMPORT_ABOUT_YOU_BASIC_PLUS_IP_PIN_PLUS_W2_PLUS_1099_INT_PLUS_1095_A`,
+  },
+  OPENFILE: {
+    hostNames: [`http://openfile.tax`],
+    flowEnabled: true,
+    returnTransferEnabled: true,
+    developerToolsEnabled: true,
+    preauthUuidEnabled: true,
+    isProd: false,
+    dataImportMode: `clientside-intercept`,
     isTelemetryEnabled: true,
     isSpanishEnabled: true,
     defaultDataImportRolloutBehavior: `DATA_IMPORT_ABOUT_YOU_BASIC_PLUS_IP_PIN_PLUS_W2_PLUS_1099_INT_PLUS_1095_A`,

@@ -21,7 +21,7 @@ components:
             ¿Ya te uniste? <LinkSignIn>Inicia sesión</LinkSignIn>. O <LinkNewsletter>regístrate para recibir una
             notificación</LinkNewsletter> cuando esté disponible otra vez.
       urls:
-        LinkSignIn: https://sa.www4.irs.gov/df/file/es/
+        LinkSignIn: https://openfile.tax/df/file/es/
         LinkNewsletter: https://service.govdelivery.com/accounts/USIRS/subscriber/new
     closing-soon:
       header: Envía tu declaración del impuesto federal para el 15 de abril a las 11.59 pm
@@ -102,7 +102,7 @@ pages:
           returning-visitor:
             body: ¿Ya te uniste al programa piloto de Direct File? <LinkSignIn>Iniciar sesión</LinkSignIn>
             urls:
-              LinkSignIn: https://sa.www4.irs.gov/df/file/es/
+              LinkSignIn: https://openfile.tax/df/file/es/
         video: <strong>Recorrido virtual de Direct File:</strong> Conoce el proceso de Direct File desde adentro.
         videoFrameTitle: Reproductor de video de YouTube
         thank-you:
@@ -113,7 +113,7 @@ pages:
               ¿Enviaste tu declaracion del impuesto federal con Direct File? <LinkSignIn>Inicia tu sesión</LinkSignIn>
               para revisar o descargar una copia de tu declaración.
             urls:
-              LinkSignIn: https://sa.www4.irs.gov/df/file/es/
+              LinkSignIn: https://openfile.tax/df/file/es/
       benefits:
         heading: Comentarios sobre Direct File el año pasado
         quote-1:
@@ -1596,7 +1596,7 @@ pages:
           También puedes <LinkSignIn>crear una cuenta</LinkSignIn> para verificar tu identidad en preparación para
           utilizar Direct File más adelante.
     urls:
-      LinkSignIn: https://sa.www4.irs.gov/df/file/es/
+      LinkSignIn: https://openfile.tax/df/file/es/
       LinkNewsletter: https://service.govdelivery.com/accounts/USIRS/subscriber/new
   About:
     pageTitle: Acerca de Direct File

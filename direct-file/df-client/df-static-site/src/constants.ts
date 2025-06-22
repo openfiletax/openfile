@@ -1,7 +1,7 @@
 export const baseRouterPath = import.meta.env.STATIC_SITE_PUBLIC_PATH || ``;
 import { commonOverrideOverrideDateIfRequired } from '@irs/df-common';
-export const spanishUrl = `https://sa.www4.irs.gov/df/file/es/`;
-export const englishUrl = `https://sa.www4.irs.gov/df/file/`;
+export const spanishUrl = `https://openfile.tax/df/file/es/`;
+export const englishUrl = `https://openfile.tax/df/file/`;
 commonOverrideOverrideDateIfRequired();
 /** Date on which the user first opened this site. */
 export const TODAY = new Date();

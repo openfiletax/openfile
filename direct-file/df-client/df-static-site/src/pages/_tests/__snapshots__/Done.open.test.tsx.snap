@@ -76,7 +76,7 @@ exports[`Done page > matches snapshot 1`] = `
   >
     <a
       class="usa-button"
-      href="https://sa.www4.irs.gov/df/file/"
+      href="https://openfile.tax/df/file/"
     >
       pages.ScreenerDone.button.text
     </a>

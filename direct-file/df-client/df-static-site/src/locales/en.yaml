@@ -16,7 +16,7 @@ components:
             Already joined? <LinkSignIn>Sign in</LinkSignIn>. Or, <LinkNewsletter>sign up to be
             notified</LinkNewsletter> when it’s open again.
       urls:
-        LinkSignIn: https://sa.www4.irs.gov/df/file/
+        LinkSignIn: https://openfile.tax/df/file/
         LinkNewsletter: https://service.govdelivery.com/accounts/USIRS/subscriber/new
     closing-soon:
       header: Submit your federal tax return by April 15 at 11:59 PM.
@@ -93,7 +93,7 @@ pages:
           returning-visitor:
             body: <LinkSignIn>Sign in</LinkSignIn>
             urls:
-              LinkSignIn: https://sa.www4.irs.gov/df/file/
+              LinkSignIn: https://openfile.tax/df/file/
         video: <strong>Take a tour of Direct File:</strong> Get an inside look at the Direct File experience.
         videoFrameTitle: YouTube video player
         thank-you:
@@ -103,7 +103,7 @@ pages:
               Submitted your federal tax return with Direct File? <LinkSignIn>Sign in</LinkSignIn> to review or download
               a copy of your return.
             urls:
-              LinkSignIn: https://sa.www4.irs.gov/df/file/
+              LinkSignIn: https://openfile.tax/df/file/
       benefits:
         heading: What people said about Direct File last year
         quote-1:
@@ -1469,7 +1469,7 @@ pages:
           You can also <LinkSignIn>create an account</LinkSignIn> to verify your identity so you’re ready to use Direct
           File.
     urls:
-      LinkSignIn: https://sa.www4.irs.gov/df/file/
+      LinkSignIn: https://openfile.tax/df/file/
       LinkNewsletter: https://service.govdelivery.com/accounts/USIRS/subscriber/new
   About:
     pageTitle: About Direct File

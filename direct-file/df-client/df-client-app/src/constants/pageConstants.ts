@@ -66,7 +66,7 @@ export const ENVIRONMENT_CONFIGS: Record<EnvironmentName, EnvironmentConfig> = {
     developerToolsEnabled: true,
     preauthUuidEnabled: true,
     isProd: false,
-    dataImportMode: `clientside-intercept`,
+    dataImportMode: `real-api`,
     isTelemetryEnabled: true,
     isSpanishEnabled: true,
     defaultDataImportRolloutBehavior: `DATA_IMPORT_ABOUT_YOU_BASIC_PLUS_IP_PIN_PLUS_W2_PLUS_1099_INT_PLUS_1095_A`,

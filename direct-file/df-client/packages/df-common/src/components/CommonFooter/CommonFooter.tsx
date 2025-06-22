@@ -2,6 +2,7 @@ import {
   Identifier,
   IdentifierLinkItem,
   IdentifierLinks,
+  IdentifierLink,
   Link,
 } from '@trussworks/react-uswds';
 import { CommonFooterProps } from './CommonFooterProps.types.js';

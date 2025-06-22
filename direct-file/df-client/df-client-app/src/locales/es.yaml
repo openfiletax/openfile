@@ -19529,39 +19529,6 @@ banner:
     body:
       - p: >-
           Tu fecha límite puede posponerse si te <LinkDisaster>afectó una situación de desastre</LinkDisaster>).
-surveyBanner:
-  header: Cuéntanos sobre tu experiencia preparando tu declaración del impuesto federal
-  para1:
-    Al IRS le gustaría saber sobre tu experiencia usando Direct File. Si te gustaría recibir una encuesta por email
-    acerca de tu experiencia, selecciona la casilla a continuación para autorizar compartir tu dirección de email. Las
-    respuestas de la encuesta no se asociarán con tu declaración del impuesto federal.
-  para2: Si te eligen para participar, el IRS te enviará la encuesta por email después del 15 de abril del 2025.
-  para3: Dirección de email
-  accordion:
-    heading: Declaración de la Ley de Privacidad
-    body:
-      - p:
-          "La autoridad que solicita esta información es 5 United States Code 301. El propósito principal para pedir
-          esta información es determinar cómo el IRS puede mejorar los servicios que te ofrecemos. La información podría
-          ser compartida según se autoriza en los usos rutinarios publicados en los siguientes sistemas de registros de
-          la Ley de Privacidad: (1) IRS 00.001 Correspondence Files and Correspondence Control Files y (2) IRS 10.004
-          Stakeholder Relationship Management and Subject Files. Compartir información se hace de forma voluntaria. El
-          no contestar alguna o ninguna de las preguntas no te afectará."
-  accordion2:
-    heading: ¿Por qué no puedo cambiar mi dirección de email?
-    body:
-      - p:
-          Tu dirección de email se rellena automáticamente con la dirección de email que usaste para registrarte para
-          una cuenta con ID.me. No puedes cambiar el email con este producto. <LinkUpdateEmail>Visita el Centro de apoyo
-          de ID.me</LinkUpdateEmail>para aprender cómo cambiar tu dirección de email.
-    urls:
-      LinkUpdateEmail: https://help.id.me/hc/es-419/articles/360011500573--C%C3%B3mo-cambio-la-direcci%C3%B3n-de-correo-electr%C3%B3nico-principal-en-mi-cuenta-ID-me
-  checkbox: Autorizo compartir mi dirección de email para recibir una encuesta sobre mi experiencia con Direct File
-  shareEmailButton: Compartir mi dirección de email
-  noThanksButton: No, gracias
-  shareEmailHeading: Se compartió tu dirección de email.
-  shareEmailText: Enviaremos un email con la encuesta a algunos participantes después del 15 de abril del 2025.
-  noThanksHeading: No se compartió tu dirección de email.
 afterDeadlineBanner:
   heading: El programa piloto de Direct File ha cerrado.
   urls:

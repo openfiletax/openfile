@@ -3,7 +3,6 @@ import { ReactNode, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Routes, Route } from 'react-router-dom';
 import ConnectivityBanner from './ConnectivityBanner/index.js';
-import SurveyBanner from './SurveyBanner.js';
 import Header from './Header/index.js';
 import { CommonFooter } from '@irs/df-common';
 import SessionManager from './SessionManager/index.js';
@@ -58,7 +57,6 @@ function GlobalLayout({
           path='/checklist/'
           element={
             <RenderIfTaxProfileLoadedGate>
-              <SurveyBanner />
             </RenderIfTaxProfileLoadedGate>
           }
         />

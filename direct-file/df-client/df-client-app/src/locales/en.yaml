@@ -22311,39 +22311,6 @@ banner:
       - p: Your deadline may be postponed if you were <LinkDisaster>affected by a disaster situation</LinkDisaster>).
     urls:
       LinkDisaster: https://www.irs.gov/newsroom/tax-relief-in-disaster-situations
-surveyBanner:
-  header: Tell us about your federal tax experience
-  para1:
-    The IRS would like to learn about your experience using Direct File. If you’d like to get an email with a survey
-    asking about your experience, agree to share your email address by checking the box below. Survey responses won’t be
-    connected to your tax return.
-  para2: We will send an email with the survey to some users after April 15, 2025.
-  para3: Email address
-  accordion:
-    heading: Privacy Act Statement
-    body:
-      - p:
-          "The authority requesting this information in 5 United States Code 301. The primary purpose of asking for the
-          information is to determine steps the IRS can take to improve our services to you. The information may be
-          disclosed as authorized by the routine uses published in the following Privacy Act System of Records: (1) IRS
-          00.001 Correspondence Files and Correspondence Control Files and (2) IRS 10.004 Stakeholder Relationship
-          Management and Subject Files. Providing the information is voluntary. Not answering some or all of the
-          questions will not affect you."
-  accordion2:
-    heading: Why can’t I change my email address again?
-    body:
-      - p:
-          Your email address is pre-filled with the email address you used to register for an ID.me account.<br></br>You
-          can’t change the email using this product. <LinkUpdateEmail>Visit ID.me’s Help Center</LinkUpdateEmail> to
-          learn how to change your email address.
-    urls:
-      LinkUpdateEmail: https://help.id.me/hc/en-us/articles/360011500573-Updating-your-account-email-address
-  checkbox: I consent to providing my email in order to receive a feedback survey on my experience with Direct File
-  shareEmailButton: Share my email
-  noThanksButton: No, thanks
-  shareEmailHeading: Your email has been shared.
-  shareEmailText: We will send an email with the survey to some users after April 15, 2025.
-  noThanksHeading: Your email has not been shared.
 afterDeadlineBanner:
   heading: The Direct File pilot is now closed
   urls:

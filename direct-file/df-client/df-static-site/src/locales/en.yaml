@@ -53,6 +53,7 @@ components:
   footer:
     important_links: Important links
     about: About
+    source_code: Source code
   breadcrumbs:
     back: Back
   chat:

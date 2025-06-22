@@ -22283,6 +22283,7 @@ privacyBanner:
 footer:
   important_links: Enlaces importantes
   about: Acerca de Direct File
+  source_code: Código fuente
 subheadings:
   /subheading/complete/sign-and-submit/next: ¿Qué es lo próximo?
   /subheading/complete/sign-and-submit/amount-owed: Cantidad que debes pagar del impuesto federal del {{/taxYear}}

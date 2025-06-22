@@ -22381,7 +22381,9 @@ privacyBanner:
   urls:
     LinkPrivacy: https://www.irs.gov/privacy-disclosure/irs-privacy-policy#collapseCollapsible1705618165974_908386
 footer:
+  important_links: Important links
   about: About
+  source_code: Source code
 about:
   header: About Direct File
   body:

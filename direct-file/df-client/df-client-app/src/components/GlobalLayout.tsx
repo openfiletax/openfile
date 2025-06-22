@@ -108,6 +108,7 @@ function GlobalLayout({
       <CommonFooter
         important_links={t(`footer.important_links`)}
         about={t(`footer.about`)}
+        source_code={t(`footer.source_code`)}
       />
     </>
   );

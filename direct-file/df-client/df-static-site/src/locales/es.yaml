@@ -2,6 +2,7 @@ components:
   footer:
     important_links: Enlaces importantes
     about: Acerca de Direct File
+    source_code: Código fuente
   skipLink:
     label: Saltar al contenido principal
   header:

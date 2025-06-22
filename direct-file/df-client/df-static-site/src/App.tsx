@@ -48,15 +48,8 @@ function App() {
             <Route path='/done' element={<ScreenerLayout page={Done} />} />
           </Routes>
           <CommonFooter
-            masthead={t(`components.footer.masthead`)}
-            logo_alt={t(`components.footer.logo_alt`)}
-            official_of={t(`components.footer.official_of`)}
             important_links={t(`components.footer.important_links`)}
             about={t(`components.footer.about`)}
-            direct_file_news={t(`components.footer.direct_file_news`)}
-            accessibility={t(`components.footer.accessibility`)}
-            privacy={t(`components.footer.privacy`)}
-            df_prefix={baseRouterPath}
           />
         </Router>
       </Providers>

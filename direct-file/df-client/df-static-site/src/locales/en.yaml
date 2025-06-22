@@ -51,14 +51,8 @@ components:
     title: Am I eligible to use Direct File?
     label: Eligibility checker
   footer:
-    masthead: Agency identifier
-    logo_alt: IRS logo
-    official_of: An official website of the
     important_links: Important links
     about: About
-    direct_file_news: Direct File News
-    accessibility: Accessibility
-    privacy: Privacy policy
   breadcrumbs:
     back: Back
   chat:

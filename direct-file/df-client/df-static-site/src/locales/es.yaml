@@ -1,13 +1,7 @@
 components:
   footer:
-    masthead: Agency identifier
-    logo_alt: Logo del IRS
-    official_of: Un sitio web oficial del
     important_links: Enlaces importantes
     about: Acerca de Direct File
-    direct_file_news: Noticias sobre Direct File
-    accessibility: Accesibilidad
-    privacy: Política de confidencialidad
   skipLink:
     label: Saltar al contenido principal
   header:

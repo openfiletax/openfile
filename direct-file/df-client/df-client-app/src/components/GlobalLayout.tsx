@@ -108,15 +108,8 @@ function GlobalLayout({
         <Route path='/*' element={<></>} />
       </Routes>
       <CommonFooter
-        masthead={t(`footer.masthead`)}
-        df_prefix={`${import.meta.env.VITE_PUBLIC_PATH}`}
-        logo_alt={t(`footer.logo_alt`)}
-        official_of={t(`footer.official_of`)}
         important_links={t(`footer.important_links`)}
         about={t(`footer.about`)}
-        direct_file_news={t(`footer.direct_file_news`)}
-        accessibility={t(`footer.accessibility`)}
-        privacy={t(`footer.privacy`)}
       />
     </>
   );

@@ -22414,14 +22414,7 @@ privacyBanner:
   urls:
     LinkPrivacy: https://www.irs.gov/privacy-disclosure/irs-privacy-policy#collapseCollapsible1705618165974_908386
 footer:
-  masthead: Agency identifier
-  logo_alt: IRS logo
-  official_of: An official website of the
-  important_links: Important links
   about: About
-  direct_file_news: Direct File News
-  accessibility: Accessibility
-  privacy: Privacy policy
 about:
   header: About Direct File
   body:

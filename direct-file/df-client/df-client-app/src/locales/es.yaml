@@ -22314,14 +22314,8 @@ privacyBanner:
     LinkPrivacy: >-
       https://www.irs.gov/es/privacy-disclosure/irs-privacy-policy#collapseCollapsible1707225489001
 footer:
-  masthead: Identificador de agencia
-  logo_alt: Logotipo del IRS
-  official_of: Un sitio web oficial del
   important_links: Enlaces importantes
   about: Acerca de Direct File
-  direct_file_news: Noticias sobre Direct File
-  accessibility: Accesibilidad
-  privacy: Política de confidencialidad
 subheadings:
   /subheading/complete/sign-and-submit/next: ¿Qué es lo próximo?
   /subheading/complete/sign-and-submit/amount-owed: Cantidad que debes pagar del impuesto federal del {{/taxYear}}

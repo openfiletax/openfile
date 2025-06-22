@@ -52,17 +52,6 @@ function GlobalLayout({
       <AutoLanguageSelector switchLang={switchLang} />
 
       {(prevOnlineStatus !== online || !online) && <ConnectivityBanner />}
-      <Routes>
-        <Route
-          path='/checklist/'
-          element={
-            <RenderIfTaxProfileLoadedGate>
-            </RenderIfTaxProfileLoadedGate>
-          }
-        />
-        {/* Intentionally rendering empty fallback, to prevent warnings */}
-        <Route path='/*' element={<></>} />
-      </Routes>
       <Header switchLang={switchLang} autoSpanishModal={autoSpanishModal} />
       <Routes>
         <Route

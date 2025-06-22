@@ -41,7 +41,7 @@ const CommonHeader: FC<CommonHeaderProps> = ({
               <div className='usa-logo'>
                 <div className='usa-logo__text'>
                   <Link to={homeLink} rel='home' title={t(homeLinkTitle)} className={styles.dfHomeLink}>
-                    <img src={`${dfPrefix}/imgs/irs-df-logo.svg`} alt={``} className={styles.irsLogo} />
+                    <img src={`${dfPrefix}/imgs/of-logo.svg`} alt={``} className={styles.irsLogo} />
                   </Link>
                 </div>
               </div>

@@ -1473,30 +1473,21 @@ pages:
       LinkSignIn: https://openfile.tax/df/file/
       LinkNewsletter: https://service.govdelivery.com/accounts/USIRS/subscriber/new
   About:
-    pageTitle: About Direct File
+    pageTitle: About OpenFile
     body:
-      - h2: What is Direct File?
-      - p:
-          <LinkDirectFileLandingPage>Direct File</LinkDirectFileLandingPage> is a new free tax tool to file your federal
-          taxes directly with the <LinkIrsAbout>IRS</LinkIrsAbout>. Currently, it supports simple tax situations in a
-          limited number of states. <LinkScreener>Check if you’re eligible to use Direct File</LinkScreener>. Find out
-          more about the <LinkIrsDirectFileStrategicPlan>Direct File Program</LinkIrsDirectFileStrategicPlan>.
-      - h2: How do I get help?
-      - p: Support for Direct File is available after logging in by clicking on the <strong>Chat</strong> button.
-      - p: Support is available:<br /> Monday through Friday, 7 a.m. to 10 p.m. Eastern time
-      - p:
-          For answers to specific tax law questions, you can use the <LinkIta>Interactive Tax Assistant</LinkIta>. For
-          everything else, please refer to the <LinkTelephoneAssistance>IRS telephone assistance
-          website</LinkTelephoneAssistance>.
-      - p:
-          Visit the main IRS website for information about our <LinkAccessibility>accessibility
-          policy</LinkAccessibility> and our <LinkPrivacy>privacy policy</LinkPrivacy>.
+      - h2: What is OpenFile?
+      - p: >-
+          <LinkOpenFileLandingPage>OpenFile</LinkOpenFileLandingPage> is a free tax tool to file federal taxes. It
+          is an open-source extension of <LinkDirectFileLandingPage>Direct File</LinkDirectFileLandingPage>, a tax tool
+          created by the <LinkIrsAbout>IRS</LinkIrsAbout>. Currently, it supports simple tax situations in a
+          limited number of states. <LinkScreener>Check if you’re eligible to use OpenFile</LinkScreener>.
+      - p: >-
+          Go to the <LinkHome>home page</LinkHome> to check the status of your return, and go to the <LinkAccount>account
+          page</LinkAccount> to log out.
     urls:
+      LinkOpenFileLandingPage: https://openfile.tax/
       LinkDirectFileLandingPage: https://directfile.irs.gov/
       LinkIrsAbout: https://www.irs.gov/about-irs
-      LinkScreener: /state
-      LinkIrsDirectFileStrategicPlan: https://www.irs.gov/about-irs/strategic-plan/irs-direct-file-pilot
-      LinkIta: https://www.irs.gov/help/ita
-      LinkTelephoneAssistance: https://www.irs.gov/help/telephone-assistance
-      LinkAccessibility: https://www.irs.gov/accessibility
-      LinkPrivacy: https://www.irs.gov/privacy-disclosure/irs-privacy-policy
+      LinkScreener: https://openfile.tax/state
+      LinkHome: /home
+      LinkAccount: /account

@@ -24256,42 +24256,27 @@ pages:
   loadingVerify:
     message: Verificando el email…
 about:
-  header: Acerca de Direct File
+  header: Acerca de OpenFile
   body:
-    - h2: ¿Qué es Direct File?
-    - p: >-
-        <LinkDirectFileLandingPage>Direct File</LinkDirectFileLandingPage> es una nueva herramienta tributaria gratuita
-        para presentar tu declaración de impuestos federales directamente con el <LinkIrsAbout>IRS</LinkIrsAbout>.
-        Actualmente, se puede usar para declaraciones de impuestos sencillas en algunos estados. <LinkScreener>Verifica
-        si eres elegible para usar Direct File</LinkScreener>. Conoce más acerca del
-        <LinkIrsDirectFileStrategicPlan>programa piloto de Direct File</LinkIrsDirectFileStrategicPlan>.
+    - h2: ¿Qué es OpenFile?
+    - p:
+        <LinkDirectFileLandingPage>OpenFile</LinkDirectFileLandingPage> es una herramienta tributaria
+        gratuita para presentar tu declaración de impuestos federales. Es una extensión de código
+        abierto de <LinkDirectFileLandingPage>Direct File</LinkDirectFileLandingPage>, una herramienta
+        tributaria creada por el <LinkIrsAbout>IRS</LinkIrsAbout>. Actualmente, se puede usar para
+        declaraciones de impuestos sencillas en algunos estados. <LinkScreener>Verifica si eres
+        elegible para usar OpenFile</LinkScreener>.
     - p: >-
         Para chequear el estado de tu declaración, ve a la <LinkHome>página de inicio</LinkHome>. Para cerrar sesión o
         borrar tu declaración federal en progreso e iniciar una nueva, ve a la <LinkAccount>página de
         cuenta</LinkAccount>.
-    - h2: ¿Cómo obtengo ayuda?
-    - p: >-
-        Asistencia con Direct File está disponible luego de iniciar sesión a través del botón de <strong>Chat</strong>.
-    - p: >-
-        La asistencia está disponible: <br /> Lunes a viernes, de 7 a.m. a 10 p.m., hora del Este
-    - p: >-
-        Para preguntas específicas sobre leyes de impuestos puedes usar el <LinkIta>Asistente Tributario
-        Interactivo</LinkIta>. Para todo lo demás, consulta la <LinkTelephoneAssistance>página de asistencia telefónica
-        del IRS</LinkTelephoneAssistance>.
-    - p: >-
-        Visita el sitio web del IRS para obtener información sobre nuestra <LinkAccessibility>política de accesibilidad
-        (en inglés)</LinkAccessibility> y nuestra <LinkPrivacy>política de confidencialidad</LinkPrivacy>.
   urls:
+    LinkOpenFileLandingPage: https://openfile.tax/
     LinkDirectFileLandingPage: https://directfile.irs.gov/
     LinkIrsAbout: https://www.irs.gov/es/about-irs
-    LinkScreener: https://directfile.irs.gov/state
-    LinkIrsDirectFileStrategicPlan: https://www.irs.gov/es/about-irs/strategic-plan/irs-direct-file-pilot
+    LinkScreener: https://openfile.tax/state
     LinkHome: /home
     LinkAccount: /account
-    LinkIta: https://www.irs.gov/es/help/ita
-    LinkTelephoneAssistance: https://www.irs.gov/es/help/telephone-assistance
-    LinkAccessibility: https://www.irs.gov/help/accessibility-guide-for-irsgov
-    LinkPrivacy: https://www.irs.gov/es/privacy-disclosure/irs-privacy-policy
 mefAlerts:
   IND-180-01:
     about-you-ip-pin-choice:

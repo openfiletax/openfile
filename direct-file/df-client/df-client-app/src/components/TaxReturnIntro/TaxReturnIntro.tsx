@@ -34,7 +34,7 @@ const TaxReturnIntro: FC = () => {
         <DFAlert type='info' i18nKey='preChecklist' collectionId={null} headingLevel='h2' />
       </div>
       <div className='screen__actions'>
-        <Button type='button' onClick={() => navigate(`/load-taxpayer-info`)}>
+        <Button type='button' onClick={() => navigate(`/checklist`)}>
           {t(`button.continue`)}
         </Button>
       </div>

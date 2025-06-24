@@ -131,16 +131,6 @@ function App() {
                                   }
                                 />
                                 <Route
-                                  path='/load-taxpayer-info'
-                                  element={
-                                    <TaxProfileContextOrSpinnerGate>
-                                      <main id='main' tabIndex={-1}>
-                                        <DataImportMagicScreen />
-                                      </main>
-                                    </TaxProfileContextOrSpinnerGate>
-                                  }
-                                />
-                                <Route
                                   path='/checklist/'
                                   element={
                                     <TaxProfileContextOrSpinnerGate>

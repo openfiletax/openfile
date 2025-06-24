@@ -176,17 +176,6 @@ const ChecklistSubcategory = forwardRef<HTMLAnchorElement, ChecklistSubcategoryP
               count={subcategoryWarningsCount}
             />
           )}
-          {checklistSubcategoryWarningLabel && (
-            <Alert
-              headingLevel='h4'
-              id='checklist-subcategory-override-warning'
-              type='warning'
-              data-testid='checklist-subcategory-override-warning'
-              slim
-            >
-              <Translation i18nKey={`info.${checklistSubcategoryWarningLabel}.alertText.body`} collectionId={null} />
-            </Alert>
-          )}
         </IconListContent>
       </IconListItem>
     );

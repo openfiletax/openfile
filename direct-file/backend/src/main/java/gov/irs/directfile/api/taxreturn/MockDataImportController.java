@@ -17,7 +17,7 @@ import gov.irs.directfile.api.user.UserService;
 
 @Slf4j
 @RestController
-@Profile(mock)
+@Profile("mock")
 class MockDataImportController extends TaxReturnController {
 
     private MockDataImportService mockDataImportService;
@@ -32,7 +32,7 @@ class MockDataImportController extends TaxReturnController {
             EncryptionCacheWarmingService cacheWarmingService,
             MockDataImportService mockDataImportService) {
         super(taxReturnService, userService, pdfService, cacheWarmingService, mockDataImportService);
-        this.mockDataImportService = (MockDataImportService) mockDataImportService;
+        this.mockDataImportService = mockDataImportService;
     }
 
     @Override

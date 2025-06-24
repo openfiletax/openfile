@@ -45,8 +45,9 @@ export const formatAndAppendHeaders = (headers: { [p: string]: string }) => {
   const viteSadiAuthId = getViteSadiAuthId();
   const viteSadiXffHeader = getViteSadiXffHeader();
   const viteSadiTidHeader = getViteSadiTidHeader();
+  const preauthUuid = localStorage.getItem(PREAUTH_UUID);
   if (isDev() && viteSadiAuthId) {
-    requestHeaders[SM_UNIVERSALID] = viteSadiAuthId;
+    requestHeaders[SM_UNIVERSALID] = preauthUuid ? preauthUuid : viteSadiAuthId;
     requestHeaders[XFF_HEADER] = viteSadiXffHeader ? viteSadiXffHeader : `76.122.220.120`;
     requestHeaders[TID_HEADER] = viteSadiTidHeader;
   }

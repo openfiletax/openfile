@@ -59,7 +59,12 @@ jobs:
         run: |
           cd direct-file/fact-graph-scala
           sbt +test fullOptJS
-          sbt publishLocal
+          sbt +test publishM2
+
+      - name: Install libs
+        run: |
+          cd direct-file/libs
+          ./mvnw -B install
 
       - name: Run backend tests
         run: |

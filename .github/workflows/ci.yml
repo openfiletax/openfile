@@ -44,6 +44,8 @@ jobs:
 
       - name: Install sbt
         uses: coursier/setup-action@v1
+        with:
+          apps: sbt
 
       - name: Setup Node 20
         uses: actions/setup-node@v4

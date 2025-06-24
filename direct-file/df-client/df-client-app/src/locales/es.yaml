@@ -24260,7 +24260,7 @@ about:
   body:
     - h2: ¿Qué es OpenFile?
     - p:
-        <LinkDirectFileLandingPage>OpenFile</LinkDirectFileLandingPage> es una herramienta tributaria
+        <LinkOpenFileLandingPage>OpenFile</LinkOpenFileLandingPage> es una herramienta tributaria
         gratuita para presentar tu declaración de impuestos federales. Es una extensión de código
         abierto de <LinkDirectFileLandingPage>Direct File</LinkDirectFileLandingPage>, una herramienta
         tributaria creada por el <LinkIrsAbout>IRS</LinkIrsAbout>. Actualmente, se puede usar para

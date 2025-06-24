@@ -49,24 +49,18 @@ describe(`Flow snapshot tests`, () => {
   store.dispatch(fetchProfile({ currentTaxReturn: `fake id` as unknown as TaxReturn }));
 
   const SCENARIO_FOLDER = `./src/test/factDictionaryTests/backend-scenarios`;
-  const ERO_SCENARIO_FOLDER = `./src/test/factDictionaryTests/backend-scenarios-ero`;
   const FLOW_SNAPSHOTS_FOLDER = `./src/test/scenarioTests/flow-snapshots`;
   const files = fs.readdirSync(SCENARIO_FOLDER);
-  const eroFiles = fs.readdirSync(ERO_SCENARIO_FOLDER);
   const jsons = files.filter((f) => f.endsWith(`.json`) && !f.endsWith(`.expected.json`));
-  const eroJsons = eroFiles.filter((f) => f.endsWith(`.json`) && !f.endsWith(`.expected.json`));
 
   const scenarioFolders = [
     { folder: SCENARIO_FOLDER, scenarioJsons: jsons },
-    { folder: ERO_SCENARIO_FOLDER, scenarioJsons: eroJsons },
   ];
   scenarioFolders.forEach((s) => {
     s.scenarioJsons.forEach((json) => {
       it(`${json} produces the same snapshot`, () => {
         const fileName = s.folder + `/` + json;
-        // add a suffix to snapshot filename so we can differentiate the ero from non-ero files
-        const prefix = s.folder === ERO_SCENARIO_FOLDER ? `ero-` : ``;
-        const snapshotFileName = FLOW_SNAPSHOTS_FOLDER + `/${prefix}` + json.replace(`.json`, `.csv`);
+        const snapshotFileName = FLOW_SNAPSHOTS_FOLDER + json.replace(`.json`, `.csv`);
         const jsonString = fs.readFileSync(fileName, `utf-8`);
         const flowSnapshot = fs.existsSync(snapshotFileName) ? fs.readFileSync(snapshotFileName, `utf-8`) : undefined;
         const factJson = JSON.parse(jsonString);

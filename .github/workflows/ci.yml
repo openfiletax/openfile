@@ -72,10 +72,14 @@ jobs:
           ./mvnw -B install
           ./mvnw -B verify
 
+      - name: Install dependencies
+        run: |
+          cd direct-file/df-client
+          npm ci
+
       - name: Run frontend tests
         run: |
           cd direct-file/df-client/df-client-app
-          npm ci
           npm run lint
           npm run test -- --watch=false
           npm run build

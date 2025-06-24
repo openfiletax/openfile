@@ -1,1 +1,2 @@
-# Product docs
+Product docs
+============

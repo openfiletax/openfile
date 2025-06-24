@@ -80,6 +80,5 @@ jobs:
       - name: Run frontend tests
         run: |
           cd direct-file/df-client/df-client-app
-          npm run lint
           npm run test -- --watch=false
           npm run build

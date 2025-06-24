@@ -10,20 +10,21 @@ export function fetchDataImportProfile(taxReturnID: string): Promise<unknown> {
   return read<unknown>(`${import.meta.env.VITE_BACKEND_URL}v1/taxreturns/${taxReturnID}/populate`, { headers });
 }
 
-function dataImportFetchHeaders(taxReturnID: string): Record<string, string> | undefined {
-  const profile = sessionStorage.getItem(`x-data-import-profile`) || `marge`;
+function dataImportFetchHeaders(taxReturnID: string): Record<string, string> {
+  const profile = sessionStorage.getItem(`x-data-import-profile`) || ``;
   const dob = sessionStorage.getItem(`x-data-import-dob`);
 
-  if (dob) {
-    return {
-      'x-data-import-profile': profile,
-      'x-data-import-dob': dob || ``,
-      SM_UNIVERSALID: taxReturnID || ``,
-    };
-  } else {
-    return {
-      'x-data-import-profile': profile,
-      SM_UNIVERSALID: taxReturnID || ``,
-    };
+  const headers: Record<string, string> = {
+    SM_UNIVERSALID: taxReturnID || ``,
+  };
+
+  if (profile) {
+    headers['x-data-import-profile'] = profile;
   }
+
+  if (dob) {
+    headers['x-data-import-dob'] = dob;
+  }
+
+  return headers;
 }

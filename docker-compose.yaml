@@ -35,8 +35,8 @@ services:
     command: -c "chown -R ${DF_DB_USER_ID:-999}:${DF_DB_GROUP_ID:-999} /var/lib/postgresql/data & exec /usr/local/bin/docker-entrypoint.sh postgres"
     environment: *dbuser
     volumes:
-      - "./state-api/docker/db/postgres/init:/docker-entrypoint-initdb.d:ro"
-      - "./state-api/docker/db/postgres/data:/var/lib/postgresql/data"
+      - "./direct-file/state-api/docker/db/postgres/init:/docker-entrypoint-initdb.d:ro"
+      - "./direct-file/state-api/docker/db/postgres/data:/var/lib/postgresql/data"
     ports:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${STATEAPI_DB_PORT:-5433}:5432"
     healthcheck: *dbhealth
@@ -53,8 +53,8 @@ services:
     command: -c "chown -R ${DF_DB_USER_ID:-999}:${DF_DB_GROUP_ID:-999} /var/lib/postgresql/data & exec /usr/local/bin/docker-entrypoint.sh postgres"
     environment: *dbuser
     volumes:
-      - "./email-service/docker/db/postgres/init:/docker-entrypoint-initdb.d:ro"
-      - "./email-service/docker/db/postgres/data:/var/lib/postgresql/data"
+      - "./direct-file/email-service/docker/db/postgres/init:/docker-entrypoint-initdb.d:ro"
+      - "./direct-file/email-service/docker/db/postgres/data:/var/lib/postgresql/data"
     ports:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_EMAIL_DB_PORT:-5434}:5432"
     healthcheck: *dbhealth
@@ -64,14 +64,14 @@ services:
   api:
     container_name: direct-file-api
     build:
-      context: ./backend
+      context: ./direct-file/backend
       dockerfile: Dockerfile-local
       additional_contexts:
-        factgraph-repo: ./fact-graph-scala
-        shared-libs: ./libs
-        boms: ./boms
-        config: ./config
-        scripts: ./scripts
+        factgraph-repo: ./direct-file/fact-graph-scala
+        shared-libs: ./direct-file/libs
+        boms: ./direct-file/boms
+        config: ./direct-file/config
+        scripts: ./direct-file/scripts
       args:
         MAVEN_OPTS: "${MAVEN_OPTS:-}"
     read_only: true
@@ -142,7 +142,7 @@ services:
       context: ./direct-file/df-client
       dockerfile: Dockerfile-local
       additional_contexts:
-        backend: ./backend
+        backend: ./direct-file/backend
       args:
         BACKEND_HOSTNAME: "openfile.tax"
         DF_CLIENT_PUBLIC_PATH: "/df/file"
@@ -158,10 +158,10 @@ services:
       context: ./direct-file/email-service
       dockerfile: Dockerfile-local
       additional_contexts:
-        factgraph-repo: ./fact-graph-scala
-        shared-libs: ./libs
-        boms: ./boms
-        config: ./config
+        factgraph-repo: ./direct-file/fact-graph-scala
+        shared-libs: ./direct-file/libs
+        boms: ./direct-file/boms
+        config: ./direct-file/config
       args:
         MAVEN_OPTS: "${MAVEN_OPTS:-}"
     read_only: true
@@ -188,10 +188,10 @@ services:
       context: ./direct-file/state-api
       dockerfile: Dockerfile-local
       additional_contexts:
-        factgraph-repo: ./fact-graph-scala
-        boms: ./boms
-        shared-libs: ./libs
-        config: ./config
+        factgraph-repo: ./direct-file/fact-graph-scala
+        boms: ./direct-file/boms
+        shared-libs: ./direct-file/libs
+        config: ./direct-file/config
       args:
         MAVEN_OPTS: "${MAVEN_OPTS:-}"
     read_only: true
@@ -231,9 +231,9 @@ services:
       - ./docker/localstack/policies:/etc/localstack/policies
       - ./backend/docker/localstack/feature-flags.json:/etc/localstack/init/ready.d/feature-flags.json
       # TODO: Remove when state-api sample testing data no longer needed?
-      - ./state-api/docker/localstack/sample-tax-return.xml:/etc/localstack/init/ready.d/sample-tax-return.xml
-      - ./state-api/docker/localstack/fakestate.cer:/etc/localstack/init/ready.d/fakestate.cer
-      - ./state-api/docker/localstack/fakestate_expired.cer:/etc/localstack/init/ready.d/fakestate_expired.cer
+      - ./direct-file/state-api/docker/localstack/sample-tax-return.xml:/etc/localstack/init/ready.d/sample-tax-return.xml
+      - ./direct-file/state-api/docker/localstack/fakestate.cer:/etc/localstack/init/ready.d/fakestate.cer
+      - ./direct-file/state-api/docker/localstack/fakestate_expired.cer:/etc/localstack/init/ready.d/fakestate_expired.cer
       # /TODO
       - "/var/run/docker.sock:/var/run/docker.sock" # Docker socket mount for Lambda support
     networks:
@@ -248,7 +248,7 @@ services:
     image: otel/opentelemetry-collector-contrib
     command: ["--config=/etc/otel-collector-config.yaml"]
     volumes:
-      - ./monitoring/otel-collector-config.yaml:/etc/otel-collector-config.yaml
+      - ./direct-file/monitoring/otel-collector-config.yaml:/etc/otel-collector-config.yaml
     ports:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_OTEL_PORT:-8888}:8888"
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_OTEL_EXPORT_PORT:-8889}:8889"
@@ -260,8 +260,8 @@ services:
     restart: unless-stopped
     image: quay.io/prometheus/prometheus
     volumes:
-      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
-      - ./monitoring/prometheus_data:/prometheus
+      - ./direct-file/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./direct-file/monitoring/prometheus_data:/prometheus
     ports:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_PROMETHEUS_PORT:-9090}:9090"
     profiles:
@@ -274,10 +274,10 @@ services:
     environment:
       GF_INSTALL_PLUGINS: "grafana-clock-panel,grafana-simple-json-datasource"
     volumes:
-      - ./monitoring/grafana_data:/var/lib/grafana
-      - ./monitoring/grafana/provisioning/:/etc/grafana/provisioning/
+      - ./mdirect-file/onitoring/grafana_data:/var/lib/grafana
+      - ./direct-file/monitoring/grafana/provisioning/:/etc/grafana/provisioning/
     env_file:
-      - ./monitoring/grafana/config.monitoring
+      - ./direct-file/monitoring/grafana/config.monitoring
     ports:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_GRAFANA_PORT:-3030}:3000"
     depends_on:

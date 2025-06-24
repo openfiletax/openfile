@@ -14,8 +14,7 @@ import gov.irs.directfile.api.dataimport.model.WrappedPopulatedData;
 public class NoopDataImportService implements DataImportService {
 
     @Override
-    public void sendPreFetchRequest(UUID taxReturnId, UUID userId, UUID externalId, String tin, int taxYear) {
-    }
+    public void sendPreFetchRequest(UUID taxReturnId, UUID userId, UUID externalId, String tin, int taxYear) {}
 
     @Override
     public WrappedPopulatedData getPopulatedData(UUID taxReturnId, UUID userId, Date taxReturnCreatedAt) {

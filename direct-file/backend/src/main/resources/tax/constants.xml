@@ -6,29 +6,29 @@
       <Description>The due date for refunds and payments in the tax year for any state that doesn't have an exception
         due to holiday or disaster.</Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Day>2025-04-15</Day>
+        <Day>2026-04-15</Day>
       </Derived>
     </Fact>
 
 
     <Fact path="/resubmissionDeadline">
       <Description>The last day that DF will accept resubmissions</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Day>2025-04-20</Day>
+        <Day>2026-04-20</Day>
       </Derived>
     </Fact>
 
     <Fact path="/massachusettsAndMaineDeadline">
       <Description>Deadline for filing taxes in MA or ME, sometimes varies due to state holiday</Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
-        <Day>2025-04-15</Day>
+        <Day>2026-04-15</Day>
       </Derived>
     </Fact>
 
@@ -36,10 +36,10 @@
       <Name>Tax year</Name>
       <Description>The tax year of the return.</Description>
       <Export downstreamFacts="true" mef="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Int>2024</Int>
+        <Int>2025</Int>
       </Derived>
     </Fact>
 
@@ -159,7 +159,7 @@
     <Fact path="/majorityOfDaysInYear">
       <Name>Majority of days in year</Name>
       <Description>More than 6 months. This should be changed to 184 in a leap year</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Switch>
           <Case>
@@ -199,7 +199,7 @@
     <Fact path="/saversCreditOctDateForSameYearContribution">
       <Name>Saver's Credit October Date</Name>
       <Description>The day in October after which a distribution no longer affects the Saver's Credit.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Int>16</Int>
       </Derived>
@@ -918,7 +918,7 @@
 
     <Fact path="/hsaExcessContributionsPenalty">
       <Description>Penalty for excess HSA contributions.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <String>6%</String>
       </Derived>
@@ -931,9 +931,9 @@
         Rev Proc .01 HSA Inflation Adjusted Items §223(b)(2)(A)
       </Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>4150</Dollar>
+        <Dollar>4400</Dollar>
       </Derived>
     </Fact>
 
@@ -944,9 +944,9 @@
         Rev Proc .01 HSA Inflation Adjusted Items §223(b)(2)(B)
       </Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>8300</Dollar>
+        <Dollar>8750</Dollar>
       </Derived>
     </Fact>
 
@@ -954,7 +954,7 @@
       <Description>Additional coverage limit for HSA contributions when TP is over 55. See instructions for form 8889
         for details.</Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Dollar>1000</Dollar>
       </Derived>

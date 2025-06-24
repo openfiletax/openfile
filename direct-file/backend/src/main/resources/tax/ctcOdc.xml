@@ -192,7 +192,7 @@
     <Fact path="/maxCtcAmount">
       <Name>Maximum child tax credit amount</Name>
       <Description>The maximum child tax credit per child</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>2000</Dollar>
@@ -287,7 +287,7 @@
     <Fact path="/maxOdcAmount">
       <Name>Maximum credit amount for other dependents</Name>
       <Description>The maximum credit for other dependents, per dependent</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>500</Dollar>

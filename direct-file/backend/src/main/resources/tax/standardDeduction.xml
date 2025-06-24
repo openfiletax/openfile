@@ -157,7 +157,7 @@
 
         TODO: Replace Any/Equal with
         Include</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Switch>
@@ -169,7 +169,7 @@
               </Any>
             </When>
             <Then>
-              <Dollar>1950</Dollar>
+              <Dollar>2000</Dollar>
             </Then>
           </Case>
           <Case>
@@ -181,7 +181,7 @@
               </Any>
             </When>
             <Then>
-              <Dollar>1550</Dollar>
+              <Dollar>1600</Dollar>
             </Then>
           </Case>
         </Switch>
@@ -206,11 +206,11 @@
         Rev Proc .15 Standard Deduction
         §1(j)(2)(A)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>
-          29200
+          30000
         </Dollar>
       </Derived>
     </Fact>
@@ -222,11 +222,11 @@
         Deduction §1(j)(2)(C) §1(j)(2)(D)
 
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>
-          14600
+          15000
         </Dollar>
       </Derived>
     </Fact>
@@ -236,11 +236,11 @@
       <Description>Standard Deduction for filers who are filing HoH.
         Rev Proc .15 Standard Deduction §1(j)(2)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>
-          21900
+          22500
         </Dollar>
       </Derived>
     </Fact>
@@ -310,7 +310,7 @@
       <Derived>
         <Add>
           <GreaterOf>
-            <Dollar>1300</Dollar>
+            <Dollar>1350</Dollar>
             <Add>
               <Dependency module="income" path="/employerIncomeSubtotal" />
               <Dollar>450</Dollar>

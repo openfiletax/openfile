@@ -61,12 +61,10 @@ jobs:
           sbt +test fullOptJS
           sbt publishLocal
 
-      - name: Build Maven modules
-        run: ./mvnw -B install
-
       - name: Run backend tests
         run: |
           cd direct-file/backend
+          ./mvnw -B install
           ./mvnw -B verify
 
       - name: Run frontend tests

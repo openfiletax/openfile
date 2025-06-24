@@ -1,0 +1,4 @@
+paths:
+    - direct-file
+paths-ignore:
+    - docs/

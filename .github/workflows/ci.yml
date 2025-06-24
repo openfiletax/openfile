@@ -55,11 +55,14 @@ jobs:
           cache-dependency-path: |
             direct-file/df-client/**/package-lock.json
 
-      - name: Build fact-graph (JVM & JS bundles)
+      - name: Build fact graph
         run: |
           cd direct-file/fact-graph-scala
           sbt +test fullOptJS
           sbt publishLocal
+
+      - name: Build Maven modules
+        run: ./mvnw -B install
 
       - name: Run backend tests
         run: |

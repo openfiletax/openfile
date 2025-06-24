@@ -108,7 +108,7 @@ services:
   csp-simulator:
     container_name: direct-file-csp-simulator
     build:
-      context: ../utils/csp-simulator
+      context: ./utils/csp-simulator
     environment:
       FLASK_RUN_HOST: "0.0.0.0"
       FLASK_SECRET_KEY: "not-so-secret-secret-key"
@@ -128,7 +128,7 @@ services:
   screener:
     container_name: direct-file-screener
     build:
-      context: ./df-client
+      context: ./direct-file/df-client
       dockerfile: Dockerfile-static-site-local
       args:
         ENABLE_SCREENER_EGAIN_CHAT: "0"
@@ -139,7 +139,7 @@ services:
   df-client:
     container_name: direct-file-app
     build:
-      context: ./df-client
+      context: ./direct-file/df-client
       dockerfile: Dockerfile-local
       additional_contexts:
         backend: ./backend
@@ -155,7 +155,7 @@ services:
   email-service:
     container_name: direct-file-email-service
     build:
-      context: ./email-service
+      context: ./direct-file/email-service
       dockerfile: Dockerfile-local
       additional_contexts:
         factgraph-repo: ./fact-graph-scala
@@ -185,7 +185,7 @@ services:
   state-api:
     container_name: state-api
     build:
-      context: ./state-api
+      context: ./direct-file/state-api
       dockerfile: Dockerfile-local
       additional_contexts:
         factgraph-repo: ./fact-graph-scala

@@ -154,7 +154,6 @@ export const AboutYouSubcategory = (
         <DatePicker
           path='/filers/*/dateOfBirth'
           importedPath='/importedPrimaryFilerDateOfBirth'
-          readOnly={true}
           autoComplete='bday'
         />
         <DFModal batches={[`data-import-0`]} i18nKey='/info/you-and-your-family/about-you/why-dob' />
@@ -187,7 +186,7 @@ export const AboutYouSubcategory = (
           autoComplete='street-address'
         />
         <PhoneNumber path='/phone' autoComplete='`tel-national`' />
-        <GenericString path='/email' readOnly={true} autoComplete='email' />
+        <GenericString path='/email' autoComplete='email' />
         <SaveAndOrContinueButton />
       </Screen>
       <Screen route='about-you-contact-info-imported' condition={{ condition: `data-import`, section: `about-you` }}>
@@ -203,7 +202,7 @@ export const AboutYouSubcategory = (
           autoComplete='street-address'
         />
         <PhoneNumber path='/phone' importedPath='/importedPrimaryFilerPhone' autoComplete='tel-national' />
-        <GenericString path='/email' readOnly={true} autoComplete='email' />
+        <GenericString path='/email' autoComplete='email' />
         <SaveAndOrContinueButton
           condition={{ operator: `isFalse`, condition: `/aboutYouDataWasSaved` }}
           nextRouteOverride='/flow/you-and-your-family/about-you/about-you-data-import'
@@ -363,8 +362,7 @@ export const AboutYouSubcategory = (
         />
         <MefAlert type='warning' mefErrorCode='IND-452' i18nKey='fraud' />
         <InfoDisplay i18nKey='/info/you-and-your-family/about-you/tin' />
-        <DFModal batches={[`data-import-w2`]} i18nKey='/info/you-and-your-family/about-you/tin/cant-change' />
-        <Tin path='/primaryFiler/tin' isSensitive={true} readOnly />
+        <Tin path='/primaryFiler/tin' isSensitive={true} />
         <SaveAndOrContinueButton />
       </Screen>
       <Gate condition='/filers/*/needsSSNWorkStatus'>
@@ -508,8 +506,7 @@ export const AboutYouSubcategory = (
         />
         <Heading i18nKey='/heading/you-and-your-family/about-you/ip-pin-input-review' />
         <InfoDisplay i18nKey='/info/ip-pin-review' />
-        <DFModal i18nKey='/info/ip-pin-review/what' />
-        <IpPin readOnly path='/filers/*/identityPin' isSensitive={true} />
+        <IpPin path='/filers/*/identityPin' isSensitive={true} />
         <SaveAndOrContinueButton />
       </Screen>
     </SubSubcategory>

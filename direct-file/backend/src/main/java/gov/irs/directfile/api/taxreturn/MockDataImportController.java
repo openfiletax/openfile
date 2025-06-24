@@ -30,7 +30,7 @@ class MockDataImportController extends TaxReturnController {
             UserService userService,
             PdfService pdfService,
             EncryptionCacheWarmingService cacheWarmingService,
-            DataImportService dataImportService
+            DataImportService dataImportService,
             MockDataImportService mockDataImportService) {
         super(taxReturnService, userService, pdfService, cacheWarmingService, mockDataImportService);
         this.mockDataImportService = (MockDataImportService) mockDataImportService;

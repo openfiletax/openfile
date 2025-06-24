@@ -1,0 +1,3 @@
+[submodule "direct-file/fact-graph-scala"]
+	path = direct-file/fact-graph-scala
+	url = https://github.com/openfiletax/fact-graph.git

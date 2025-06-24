@@ -50,7 +50,7 @@ function App() {
           <CommonFooter
             important_links={t(`components.footer.important_links`)}
             about={t(`components.footer.about`)}
-        source_code={t(`footer.source_code`)}
+            source_code={t(`footer.source_code`)}
           />
         </Router>
       </Providers>

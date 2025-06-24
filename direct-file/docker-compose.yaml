@@ -108,7 +108,7 @@ services:
   csp-simulator:
     container_name: direct-file-csp-simulator
     build:
-      context: ./utils/csp-simulator
+      context: ../utils/csp-simulator
     environment:
       FLASK_RUN_HOST: "0.0.0.0"
       FLASK_SECRET_KEY: "not-so-secret-secret-key"

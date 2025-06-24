@@ -312,7 +312,7 @@ Most of the project dependencies can be installed using [SDKMAN!](https://sdkman
         * direct-file-app &mdash; df-client | `df-client`
         * direct-file-db
         * state-api-db
-        * direct-file-csp-simulator &mdash; csp-simulator | `/utils/csp-simulator`
+        * direct-file-csp-simulator &mdash; csp-simulator | `../utils/csp-simulator`
         * localstack
         * direct-file-api &mdash; api | `/backend`
         * state-api &mdash; state-api | `/state-api`

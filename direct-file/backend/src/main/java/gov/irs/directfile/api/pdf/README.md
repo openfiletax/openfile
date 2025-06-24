@@ -58,7 +58,7 @@ You might be tempted to use a generic filename for the PDF template, eliminating
 
 This key and its contents configure the code in `class PdfService` to populate each PDF form field with the appropriate tax data. 
 
-You will use the `pdfToYaml` utility to generate this key and its subkeys. See the `README` and source in folder `direct-file/utils/pdf-to-yaml/src/main/java/gov/irs/directfile/pdftoyaml` for details.
+You will use the `pdfToYaml` utility to generate this key and its subkeys. See the `README` and source in folder `utils/pdf-to-yaml/src/main/java/gov/irs/directfile/pdftoyaml` for details.
 
 #### The `table:` key
 

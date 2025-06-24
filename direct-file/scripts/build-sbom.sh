@@ -49,12 +49,12 @@ echo "Writing data-models sbom"
 cd ../libs/data-models
 ./mvnw cyclonedx:makeBom
 echo "Writing csp-simulator sbom"
-cd ../../utils/csp-simulator
+cd ../../../utils/csp-simulator
 poetry run cyclonedx-py requirements --output-format json --outfile sbom.json
 echo "Writing pdf-to-yaml sbom"
 cd ../../utils/pdf-to-yaml
 ./mvnw cyclonedx:makeBom
-cd ../../../docs
+cd ../../docs
 
 cd "$WD"
 cyclonedx merge --input-files \
@@ -70,8 +70,8 @@ cyclonedx merge --input-files \
   fact-graph-scala/jvm/target/fact-graph-0.1.0-SNAPSHOT.bom.xml \
   fact-graph-scala/manual-scala-sbom.xml \
   libs/data-models/target/bom.json \
-  utils/pdf-to-yaml/target/bom.json \
-  utils/csp-simulator/sbom.json \
+  ../utils/pdf-to-yaml/target/bom.json \
+  ../utils/csp-simulator/sbom.json \
   --name $NAME --version $VERSION --group $GROUP \
   --output-format json --output-file sbom.tmp.json
 
@@ -79,7 +79,7 @@ cyclonedx merge --input-files \
 # I have an open issue for that at
 # https://github.com/CycloneDX/cyclonedx-cli/issues/326,
 # but in the meantime, it's easy enough to filter.
-node utils/filter_sbom.mjs
+node ../utils/filter_sbom.mjs
 
 python3 -m json.tool sbom.tmp.json >sbom.json
 rm sbom.tmp.json

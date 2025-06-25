@@ -13,6 +13,9 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class FakePIIService implements PIIService {
+    private static final String PLACEHOLDER_ATTRIBUTE_VALUE = "FAKE_PII_PLACEHOLDER";
+    public static final String TIN = "123001234";
+
     @Override
     public Map<PIIAttribute, String> fetchAttributes(UUID userExternalId, Set<PIIAttribute> attributes) {
         Map<PIIAttribute, String> responseMap = new HashMap<>();
@@ -20,9 +23,12 @@ public class FakePIIService implements PIIService {
         for (PIIAttribute attribute : attributes) {
             String attributeValue;
             switch (attribute) {
-                case PIIAttribute.EMAILADDRESS -> attributeValue = "";
-                case PIIAttribute.TIN -> attributeValue = "";
-                default -> attributeValue = "";
+                case PIIAttribute.EMAILADDRESS -> attributeValue =
+                        String.format("test-user+%s@directfile.test", userExternalId.toString());
+                case PIIAttribute.TIN -> {
+                    attributeValue = TIN;
+                }
+                default -> attributeValue = PLACEHOLDER_ATTRIBUTE_VALUE;
             }
 
             responseMap.put(attribute, attributeValue);

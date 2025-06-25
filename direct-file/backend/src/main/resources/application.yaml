@@ -6,6 +6,7 @@ spring.profiles.group:
     - "enable-remote-cache"
     - "allow-authentication-without-pii"
     - "local"
+    - "mock"
 
 spring:
   threads:
@@ -460,7 +461,7 @@ direct-file:
       hex-key:
       object-key: "data-import-allowlist-export.csv"
   data-import:
-    enabled: false
+    enabled: true
   feature-flags:
     allowlist:
       enabled: false

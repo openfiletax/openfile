@@ -14,7 +14,6 @@ import com.fasterxml.jackson.databind.node.BooleanNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
@@ -273,8 +272,7 @@ public class TaxReturnService {
                 "/filers",
                 new FactTypeWithItem(
                         "gov.irs.factgraph.persisters.CollectionWrapper",
-                        new ObjectNode(
-                                jsonNodeFactory, Map.of("items", new ArrayNode(jsonNodeFactory, filersArray)))));
+                        new ObjectNode(jsonNodeFactory, Map.of("items", new ArrayNode(jsonNodeFactory, filersArray)))));
         facts.put(
                 "/filers/#" + primaryFilerId + "/isPrimaryFiler",
                 new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getTrue()));

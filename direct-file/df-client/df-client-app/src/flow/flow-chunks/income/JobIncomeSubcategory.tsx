@@ -380,6 +380,16 @@ export const JobIncomeSubcategory = (
               { operator: `isTrue`, condition: `/formW2s/*/isImported` },
             ]}
           />
+          <DFModal
+            batches={[`data-import-w2`]}
+            condition={`/formW2s/*/filer/isPrimaryFiler`}
+            i18nKey='/info/you-and-your-family/about-you/tin/cant-change'
+          />
+          <DFModal
+            batches={[`data-import-w2`]}
+            condition={`/formW2s/*/filer/isSecondaryFiler`}
+            i18nKey='/info/you-and-your-family/about-you/tin/cant-change-spouse'
+          />
           <DFModal batches={[`data-import-w2`]} i18nKey='/info/income/w2/what-if-w2-ssn-is-wrong' />
           {/* These TIN fields are messy --- if the primary filer isn't filing MFJ, we won't have a
               filer on THIS screen. If they are filing MFJ though, we will have a filer. So, we

@@ -186,7 +186,11 @@ export const AboutYouSubcategory = (
           autoComplete='street-address'
         />
         <PhoneNumber path='/phone' autoComplete='`tel-national`' />
-        <GenericString path='/email' autoComplete='email' />
+        <LimitingString
+          path='/email'
+          displayOnlyOn='edit'
+          autoComplete='email'
+        />
         <SaveAndOrContinueButton />
       </Screen>
       <Screen route='about-you-contact-info-imported' condition={{ condition: `data-import`, section: `about-you` }}>

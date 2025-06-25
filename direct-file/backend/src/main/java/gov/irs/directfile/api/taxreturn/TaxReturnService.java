@@ -244,54 +244,43 @@ public class TaxReturnService {
     }
 
     private void addEmailAndTinToFactGraph(UUID userId, Map<String, FactTypeWithItem> facts, String email, String tin) {
-        // Add email to fact graph
-        if (StringUtils.isBlank(email)) {
-            log.error("Cannot create tax return for user {}. Email is blank.", userId);
-            return;
-        } else {
-            ObjectNode emailNode = JsonNodeFactory.instance.objectNode();
-            emailNode.put("email", email);
-            facts.put("/email", new FactTypeWithItem("gov.irs.factgraph.persisters.EmailAddressWrapper", emailNode));
+        ObjectNode emailNode = JsonNodeFactory.instance.objectNode();
+        emailNode.put("email", email);
+        facts.put("/email", new FactTypeWithItem("gov.irs.factgraph.persisters.EmailAddressWrapper", emailNode));
+
+        String cleanedTin = tin.replace("-", "");
+        if (cleanedTin.length() != 9) {
+            log.error("Invalid TIN for user {}", userId);
+
+            throw new InvalidDataException(String.format("Invalid TIN for user %s", userId));
         }
+        ObjectNode tinNode = JsonNodeFactory.instance.objectNode();
+        tinNode.put("area", cleanedTin.substring(0, 3));
+        tinNode.put("group", cleanedTin.substring(3, 5));
+        tinNode.put("serial", cleanedTin.substring(5, 9));
 
-        // Add TIN to fact graph
-        if (StringUtils.isBlank(tin)) {
-            log.error("Cannot create tax return for user {}. TIN is blank.", userId);
-            return;
-        } else {
-            String cleanedTin = tin.replace("-", "");
-            if (cleanedTin.length() != 9) {
-                log.error("Invalid TIN for user {}", userId);
+        String primaryFilerId = UUID.randomUUID().toString();
+        String secondaryFilerId = UUID.randomUUID().toString();
+        facts.put(
+                "/filers/#" + primaryFilerId + "/tin",
+                new FactTypeWithItem("gov.irs.factgraph.persisters.TinWrapper", tinNode));
 
-                throw new InvalidDataException(String.format("Invalid TIN for user %s", userId));
-            }
-            ObjectNode tinNode = JsonNodeFactory.instance.objectNode();
-            tinNode.put("area", cleanedTin.substring(0, 3));
-            tinNode.put("group", cleanedTin.substring(3, 5));
-            tinNode.put("serial", cleanedTin.substring(5, 9));
-
-            String primaryFilerId = UUID.randomUUID().toString();
-            String secondaryFilerId = UUID.randomUUID().toString();
-            facts.put(
-                    "/filers/#" + primaryFilerId + "/tin",
-                    new FactTypeWithItem("gov.irs.factgraph.persisters.TinWrapper", tinNode));
-
-            ArrayList<JsonNode> filersArray = new ArrayList<>();
-            JsonNodeFactory jsonNodeFactory = new JsonNodeFactory(false);
-            filersArray.add(jsonNodeFactory.textNode(primaryFilerId));
-            filersArray.add(jsonNodeFactory.textNode(secondaryFilerId));
-            facts.put(
-                    "/filers",
-                    new FactTypeWithItem(
-                            "gov.irs.factgraph.persisters.CollectionWrapper",
-                            new ObjectNode(
-                                    jsonNodeFactory, Map.of("items", new ArrayNode(jsonNodeFactory, filersArray)))));
-            facts.put(
-                    "/filers/#" + primaryFilerId + "/isPrimaryFiler",
-                    new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getTrue()));
-            facts.put(
-                    "/filers/#" + secondaryFilerId + "/isPrimaryFiler",
-                    new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getFalse()));
+        ArrayList<JsonNode> filersArray = new ArrayList<>();
+        JsonNodeFactory jsonNodeFactory = new JsonNodeFactory(false);
+        filersArray.add(jsonNodeFactory.textNode(primaryFilerId));
+        filersArray.add(jsonNodeFactory.textNode(secondaryFilerId));
+        facts.put(
+                "/filers",
+                new FactTypeWithItem(
+                        "gov.irs.factgraph.persisters.CollectionWrapper",
+                        new ObjectNode(
+                                jsonNodeFactory, Map.of("items", new ArrayNode(jsonNodeFactory, filersArray)))));
+        facts.put(
+                "/filers/#" + primaryFilerId + "/isPrimaryFiler",
+                new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getTrue()));
+        facts.put(
+                "/filers/#" + secondaryFilerId + "/isPrimaryFiler",
+                new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getFalse()));
         }
     }
 

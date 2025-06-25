@@ -461,7 +461,7 @@ direct-file:
       hex-key:
       object-key: "data-import-allowlist-export.csv"
   data-import:
-    enabled: true
+    enabled: false
   feature-flags:
     allowlist:
       enabled: false

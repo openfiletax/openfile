@@ -246,7 +246,7 @@ public class TaxReturnService {
     private void addEmailAndTinToFactGraph(UUID userId, Map<String, FactTypeWithItem> facts, String email, String tin) {
         // Add email to fact graph
         if (StringUtils.isBlank(email)) {
-            log.debug("Cannot create tax return for user {}. Email is blank.", userId);
+            log.error("Cannot create tax return for user {}. Email is blank.", userId);
             return;
         } else {
             ObjectNode emailNode = JsonNodeFactory.instance.objectNode();
@@ -256,7 +256,7 @@ public class TaxReturnService {
 
         // Add TIN to fact graph
         if (StringUtils.isBlank(tin)) {
-            log.debug("Cannot create tax return for user {}. TIN is blank.", userId);
+            log.error("Cannot create tax return for user {}. TIN is blank.", userId);
 
             throw new InvalidDataException(
                     String.format("Cannot create tax return for user %s. TIN is blank.", userId));

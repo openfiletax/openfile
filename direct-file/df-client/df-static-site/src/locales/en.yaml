@@ -61,7 +61,6 @@ components:
     aria-label: (opens in a new window)
   pageTitle:
     product: Direct File
-    agency: Internal Revenue Service
   errorBoundary:
     siteWide:
       alertText:

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Head: FC = () => {
   const { t } = useTranslation(`translation`);
-  const titleBoilerplate = `${t(`pageTitle.product`)} | ${t(`pageTitle.agency`)}`;
+  const titleBoilerplate = `${t(`pageTitle.product`)}`;
   return <Helmet defaultTitle={titleBoilerplate} titleTemplate={`%s | ${titleBoilerplate}`} />;
 };
 

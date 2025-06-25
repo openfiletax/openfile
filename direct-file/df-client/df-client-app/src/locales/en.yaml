@@ -22225,8 +22225,8 @@ systemAlerts:
     unableToGenerateAuthorizationCode:
       An error occurred authorizing transfer. Please try again in five minutes. ({{errorCode}})
 header:
-  banner-label: Direct File
-  title-link-label: Direct File home
+  banner-label: OpenFile
+  title-link-label: OpenFile home
   skip-to-main: Skip to main content
   changeLanguage: Languages
   menu: Menu
@@ -22238,8 +22238,7 @@ header:
     urls:
       LinkOptions: https://www.irs.gov/filing/individuals/how-to-file
 pageTitle:
-  product: Direct File
-  agency: Internal Revenue Service
+  product: OpenFile
 account:
   title: Account
   signOut: Sign out

@@ -257,9 +257,7 @@ public class TaxReturnService {
         // Add TIN to fact graph
         if (StringUtils.isBlank(tin)) {
             log.error("Cannot create tax return for user {}. TIN is blank.", userId);
-
-            throw new InvalidDataException(
-                    String.format("Cannot create tax return for user %s. TIN is blank.", userId));
+            return;
         } else {
             String cleanedTin = tin.replace("-", "");
             if (cleanedTin.length() != 9) {

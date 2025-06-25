@@ -20,8 +20,8 @@ public class FakePIIService implements PIIService {
         for (PIIAttribute attribute : attributes) {
             String attributeValue;
             switch (attribute) {
-                case PIIAttribute.EMAILADDRESS -> "";
-                case PIIAttribute.TIN -> "";
+                case PIIAttribute.EMAILADDRESS -> ""
+                case PIIAttribute.TIN -> ""
                 default -> "";
             }
 

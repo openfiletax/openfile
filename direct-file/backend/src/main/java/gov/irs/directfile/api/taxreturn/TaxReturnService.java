@@ -281,7 +281,6 @@ public class TaxReturnService {
         facts.put(
                 "/filers/#" + secondaryFilerId + "/isPrimaryFiler",
                 new FactTypeWithItem("gov.irs.factgraph.persisters.BooleanWrapper", BooleanNode.getFalse()));
-        }
     }
 
     /*

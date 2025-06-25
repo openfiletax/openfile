@@ -25,7 +25,7 @@ describe(`Title the document correctly`, () => {
         </HelmetProvider>
       </NetworkConnectionContext.Provider>
     );
-    await waitFor(() => expect(document.title).toBe(`Direct File | Internal Revenue Service`));
+    await waitFor(() => expect(document.title).toBe(`OpenFile`));
   });
 
   test(`titles document with nested helmet to override title`, async () => {
@@ -38,6 +38,6 @@ describe(`Title the document correctly`, () => {
         </HelmetProvider>
       </NetworkConnectionContext.Provider>
     );
-    await waitFor(() => expect(document.title).toBe(`${title} | Direct File | Internal Revenue Service`));
+    await waitFor(() => expect(document.title).toBe(`${title} | OpenFile`));
   });
 });

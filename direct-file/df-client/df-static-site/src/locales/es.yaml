@@ -72,8 +72,7 @@ components:
           text: Fuimos notificados. Por favor, intenta otra vez.
 
   pageTitle:
-    product: Direct File
-    agency: Servicio de impuestos internos
+    product: OpenFile
   stepIndicator:
     ofText: de
     stepText: Paso

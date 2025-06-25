@@ -19442,8 +19442,7 @@ header:
     urls:
       LinkOptions: https://www.irs.gov/es/filing/individuals/how-to-file
 pageTitle:
-  product: Direct File
-  agency: Servicio de Impuestos Internos (IRS)
+  product: OpenFile
 account:
   title: Cuenta
   signOut: Cerrar sesión

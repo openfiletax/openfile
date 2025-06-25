@@ -249,9 +249,15 @@ public class TaxReturnService {
 
         String cleanedTin = tin.replace("-", "");
         ObjectNode tinNode = JsonNodeFactory.instance.objectNode();
-        tinNode.put("area", cleanedTin.substring(0, 3));
-        tinNode.put("group", cleanedTin.substring(3, 5));
-        tinNode.put("serial", cleanedTin.substring(5, 9));
+        if (tin.length() == 0) {
+            tinNode.put("area", "");
+            tinNode.put("group", "");
+            tinNode.put("serial", "");
+        } else {
+            tinNode.put("area", cleanedTin.substring(0, 3));
+            tinNode.put("group", cleanedTin.substring(3, 5));
+            tinNode.put("serial", cleanedTin.substring(5, 9));
+        }
 
         String primaryFilerId = UUID.randomUUID().toString();
         String secondaryFilerId = UUID.randomUUID().toString();

@@ -248,11 +248,6 @@ public class TaxReturnService {
         facts.put("/email", new FactTypeWithItem("gov.irs.factgraph.persisters.EmailAddressWrapper", emailNode));
 
         String cleanedTin = tin.replace("-", "");
-        if (cleanedTin.length() != 9) {
-            log.error("Invalid TIN for user {}", userId);
-
-            throw new InvalidDataException(String.format("Invalid TIN for user %s", userId));
-        }
         ObjectNode tinNode = JsonNodeFactory.instance.objectNode();
         tinNode.put("area", cleanedTin.substring(0, 3));
         tinNode.put("group", cleanedTin.substring(3, 5));

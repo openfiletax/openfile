@@ -20,9 +20,9 @@ public class FakePIIService implements PIIService {
         for (PIIAttribute attribute : attributes) {
             String attributeValue;
             switch (attribute) {
-                case PIIAttribute.EMAILADDRESS -> ""
-                case PIIAttribute.TIN -> ""
-                default -> "";
+                case PIIAttribute.EMAILADDRESS -> attributeValue = "";
+                case PIIAttribute.TIN -> attributeValue = "";
+                default -> attributeValue = "";
             }
 
             responseMap.put(attribute, attributeValue);

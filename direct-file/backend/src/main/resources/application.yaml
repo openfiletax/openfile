@@ -6,7 +6,6 @@ spring.profiles.group:
     - "enable-remote-cache"
     - "allow-authentication-without-pii"
     - "local"
-    - "mock"
 
 spring:
   threads:

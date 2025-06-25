@@ -190,6 +190,7 @@ export const AboutYouSubcategory = (
           path='/email'
           displayOnlyOn='edit'
           autoComplete='email'
+          defaultValue={''}
         />
         <SaveAndOrContinueButton />
       </Screen>
@@ -366,7 +367,7 @@ export const AboutYouSubcategory = (
         />
         <MefAlert type='warning' mefErrorCode='IND-452' i18nKey='fraud' />
         <InfoDisplay i18nKey='/info/you-and-your-family/about-you/tin' />
-        <Tin path='/primaryFiler/tin' isSensitive={true} />
+        <Tin path='/primaryFiler/tin' isSensitive={true} defaultValue={''} />
         <SaveAndOrContinueButton />
       </Screen>
       <Gate condition='/filers/*/needsSSNWorkStatus'>

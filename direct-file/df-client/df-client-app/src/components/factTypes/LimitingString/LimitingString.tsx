@@ -18,6 +18,7 @@ const LimitingString = forwardRef<HTMLInputElement, FactProps>(
       collectionId,
       required = true,
       hintKey,
+      defaultValue,
       readOnly,
       inputSuffix,
       autoComplete,
@@ -63,7 +64,7 @@ const LimitingString = forwardRef<HTMLInputElement, FactProps>(
         inputRef={ref}
         inputMode='text'
         type='text'
-        defaultValue={fact as string}
+        defaultValue={defaultValue ?? fact as string}
         maxLength={getFactIntLimit(path, `MaxLength`)}
         readOnly={readOnly}
         inputSuffix={inputSuffix}

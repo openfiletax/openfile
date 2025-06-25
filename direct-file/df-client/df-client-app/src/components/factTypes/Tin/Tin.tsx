@@ -14,6 +14,7 @@ const Tin = ({
   isValid,
   required,
   concretePath,
+  defaultValue,
   readOnly,
   collectionId,
   hintKey,
@@ -55,7 +56,7 @@ const Tin = ({
         type='text'
         mask={`___-__-____`}
         readOnly={isTinReadOnly}
-        defaultValue={`${fact ?? ``}`}
+        defaultValue={defaultValue ?? `${fact ?? ``}`}
       />
     </>
   );

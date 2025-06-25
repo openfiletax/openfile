@@ -151,6 +151,7 @@ export interface FactDeclaration extends BaseFactContentDeclaration {
   dataViewAnchorLink?: string;
   importedPath?: AbsolutePath;
   inputSuffix?: string;
+  defaultValue?: string;
 }
 
 export interface DollarFactDeclaration extends FactDeclaration {

@@ -25112,7 +25112,7 @@ subsubcategories:
     1099-r-info: Información del 1099-R
 home:
   header:
-    body: Bienvenidos a <strong>Direct File</strong>
+    body: Bienvenidos a <strong>OpenFile</strong>
   endOfTaxSeasonAlert: >-
     Estatus: No puedes enviar tu declaración del impuesto federal con Direct File porque ya pasó la fecha límite para
     enviar la declaración.
@@ -25576,7 +25576,7 @@ reminderTaxReturnCard:
 reminderTaxReturnCardAfterFilingDeadline:
   heading: Fecha límite
   body: >-
-    Direct File aún está abierto pero la fecha límite para enviar tu declaración del impuesto federal fue el 15 de
+    OpenFile aún está abierto pero la fecha límite para enviar tu declaración del impuesto federal fue el 15 de
     abril. Tu fecha límite se podría posponer si fuiste <LinkDisaster>afectado por una situación de
     desastre</LinkDisaster>.
   urls:
@@ -26750,19 +26750,16 @@ dataImportMagicScreen:
     que el IRS los tiene disponibles
   thirdCheck: Te ayudará a revisar la información importada antes de enviar tu declaración
 preChecklist:
-  header: Comenzar con Direct File
+  header: Comenzar con OpenFile
   helpText:
     modals:
       text:
         - ol:
             - li:
-                - p: <strong>Verifica si Direct File es adecuado para ti</strong>
+                - p: <strong>Verifica si OpenFile es adecuado para ti</strong>
                 - p: >-
-                    Para el año tributario {{/taxYear}}, se puede utilizar Direct File para necesidades tributarias
+                    Para el año tributario {{/taxYear}}, se puede utilizar OpenFile para necesidades tributarias
                     sencillas en ciertos estados. No aceptamos todos los tipos de ingresos.
-                - p: >-
-                    <LinkScreener>Verifica tu elegibilidad,</LinkScreener> especialmente si tu situación tributaria
-                    cambió desde el año pasado.
             - li:
                 - p: >-
                     <strong>Reúne tu información de impuestos y formularios</strong>
@@ -26773,17 +26770,15 @@ preChecklist:
                         Tú y tu hogar (p. ej.: números de Seguro Social o Números de Identificación Personal del
                         Contribuyente)
                     - li: >-
-                        Ingresos que recibiste (<LinkModal1>Descubre los tipos de ingresos que Direct File
+                        Ingresos que recibiste (<LinkModal1>Descubre los tipos de ingresos que OpenFile
                         acepta</LinkModal1>)
                     - li: >-
                         Otras situaciones que podrían afectar tu responsabilidad tributaria, como actividad en una HSA o
                         gastos por el cuidado de dependientes
         - p: >-
             Ten a la mano esta información y cualquier formulario de impuestos que hayas recibido antes de empezar.
-      urls:
-        LinkScreener: https://directfile.irs.gov/state
       LinkModal1:
-        header: ¿Qué tipos de ingresos acepta Direct File?
+        header: ¿Qué tipos de ingresos acepta OpenFile?
         body:
           - ul:
               - li: Ingresos de empleado (Formulario W-2)
@@ -26796,10 +26791,9 @@ preChecklist:
                   Distribuciones de planes de jubilación patrocinados por un empleador, como las 401(k), pensiones,
                   anualidades, planes 403(b) o planes gubernamentales 457(b) (Formulario 1099-R)
   alertText:
-    heading: "Nota: guardamos tu información a medida que avanzas"
+    heading: "Nota: no guardamos tu información"
     body: >-
-      Esto significa que puedes cerrar Direct File y regresar en otro momento. Podrás retomar la declaración donde la
-      dejaste.
+      Esto significa que no puedes cerrar OpenFile y regresar en otro momento.
   review-what-you-need:
     body: >-
       Revisa <LinkPreChecklist>lo que necesitarás para usar Direct File.</LinkPreChecklist>

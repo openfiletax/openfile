@@ -20500,7 +20500,7 @@ auth:
     signIn: Sign in
 home:
   header:
-    body: Welcome to <strong>Direct File</strong>
+    body: Welcome to <strong>OpenFile</strong>
   endOfTaxSeasonAlert:
     "Status: You can’t file your federal tax return using Direct File because the tax filing deadline has passed"
   error: There was an error processing your request.
@@ -21523,7 +21523,7 @@ reminderTaxReturnCard:
 reminderTaxReturnCardAfterFilingDeadline:
   heading: Deadline
   body: >-
-    Direct File is still open, but the federal tax filing deadline was April 15th. Your deadline may be postponed if you
+    OpenFile is still open, but the federal tax filing deadline was April 15th. Your deadline may be postponed if you
     were <LinkDisaster>affected by a disaster situation</LinkDisaster>
   urls:
     LinkDisaster: https://www.irs.gov/newsroom/tax-relief-in-disaster-situations
@@ -22420,9 +22420,6 @@ preChecklist:
                 - p:
                     For the {{/taxYear}} tax year, we support simple tax needs for taxpayers in certain states. We don’t
                     support all income types.
-                - p:
-                    <LinkScreener>Check your eligibility,</LinkScreener> especially if your tax situation has changed
-                    since last year.
             - li:
                 - p: <strong>Gather your tax forms and documents</strong>
                 - p: "We’ll guide you through the filing process, asking questions about:"
@@ -22430,15 +22427,13 @@ preChecklist:
                     - li:
                         You and your household (e.g., Social Security numbers or Individual Taxpayer Identification
                         Numbers)
-                    - li: Income you received (<LinkModal1>Learn what types of income Direct File supports</LinkModal1>)
+                    - li: Income you received (<LinkModal1>Learn what types of income OpenFile supports</LinkModal1>)
                     - li:
                         Other situations that might affect your tax liability, like HSA activity or dependent care
                         expenses
         - p: Find this information and any tax forms you received before you get started.
-      urls:
-        LinkScreener: https://directfile.irs.gov/state
       LinkModal1:
-        header: Which types of income does Direct File support?
+        header: Which types of income does OpenFile support?
         body:
           - ul:
               - li: Income made as an employee (Form W-2)
@@ -22452,8 +22447,8 @@ preChecklist:
                   governmental 457(b) (Form 1099-R)
 
   alertText:
-    heading: "Tip: we save your work as you go"
-    body: That means you can close Direct File and come back another time. You’ll be able to pick up where you left off.
+    heading: "Note: we do not save your work"
+    body: You cannot close OpenFile and come back another time.
   review-what-you-need:
     body: Review <LinkPreChecklist>what you’ll need to get started with Direct File.</LinkPreChecklist>
     urls:

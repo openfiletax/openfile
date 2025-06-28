@@ -1,4 +1,5 @@
 Design docs
+===========
 
 .. toctree::
    :maxdepth: 3

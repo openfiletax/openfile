@@ -1,2 +1,9 @@
-This is a consolidated set of documentation written to-date during the
-history of Direct File since 2022.
+Filing taxes is tedious. OpenFile uses Fact Graph to generate 1040s.
+
+Index
+-----
+
+.. toctree::
+   :maxdepth: 2
+
+   design

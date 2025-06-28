@@ -12,7 +12,7 @@ Usage:
 
 From the repo root, call with
 
-    python direct-file/scripts/audit-tests.py
+    python scripts/audit-tests.py
 
 """
 import sys

@@ -4,6 +4,6 @@ set -e
 
 
 ../scripts/build-fact-graph.sh
-cd ../libs/
+cd ../direct-file/libs/
 echo "cleaning, compiling, installing shared dependencies..."
 ./mvnw clean install

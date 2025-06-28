@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-cd ../backend
+cd direct-file/backend
 mvn test -Dtest=FactGraphServiceScenarioTest
-cd ../scripts
+cd direct-file/scripts

@@ -7,7 +7,7 @@
 This project relies on locally installed Maven packages in order to build; therefore, you can run the `/scripts/build-project.sh` which will install the shared dependencies
 
 ```sh
-../scripts/build-project.sh
+../../scripts/build-project.sh
 ```
 
 ### Docker

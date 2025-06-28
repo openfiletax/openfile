@@ -22,7 +22,7 @@ WD=$(pwd)
 # utility will replace it, rather than append to it
 rm -f sbom.json
 echo "Writing backend sbom"
-cd backend
+cd direct-file/backend
 ./mvnw cyclonedx:makeBom
 echo "Writing email-service sbom"
 cd ../email-service

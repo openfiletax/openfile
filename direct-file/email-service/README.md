@@ -10,7 +10,7 @@ This service is responsible for reading from a queue, generating emails, and sen
 `direct-file/scripts/build-project.sh` script, which will install the shared dependencies.
 
     ```sh
-    INSTALL_MEF=0 ../scripts/build-project.sh
+    INSTALL_MEF=0 ../../scripts/build-project.sh
     ```
 
 ### Docker

@@ -79,7 +79,7 @@ where
 Backend relies on locally installed Maven packages in order to build; therefore, you can run the `/scripts/build-project.sh` which will install the shared dependencies
 
 ```sh
-INSTALL_MEF=0 ../scripts/build-project.sh
+INSTALL_MEF=0 ../../scripts/build-project.sh
 ```
 
 #### Spring Boot Maven plugin

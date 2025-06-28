@@ -405,7 +405,7 @@ Environment Variables
 
    .. code:: sh
 
-      ./direct-file/scripts/local-setup.sh
+      ./scripts/local-setup.sh
 
 3. Re-load your environment so that the new ``LOCAL_WRAPPING_KEY`` value
    is loaded. If you set the values in one of your shell dotfiles

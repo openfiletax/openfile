@@ -1,39 +1,5 @@
-Onboarding
-==========
-
-**Table of Contents**
-
-1. `Quickstart <#quickstart>`__
-2. `Codebase Overview <#codebase-overview>`__
-3. `Local Environment Setup <#local-environment-setup>`__
-4. `Software Installs <#software-installs>`__
-
-   -  `Required Software <#required-software>`__
-   -  `Optional Software <#optional-software>`__
-   -  `Installing software using
-      Homebrew <#installing-software-using-homebrew>`__
-   -  `Installing software using
-      SDKMAN! <#installing-software-using-sdkman>`__
-
-5. `Source Code <#source-code>`__
-6. `Environment Variables <#environment-variables>`__
-7. `Building with Docker - RECOMMENDED <#building-with-docker>`__
-8. `Building with command line — local
-   builds) <#building-with-command-line>`__
-
-   -  `Install shared dependencies <#install-shared-depedencies>`__
-   -  `Stand up development
-      containers <#stand-up-development-containers>`__
-   -  `Build individual Spring Boot
-      projects <#build-individual-spring-boot-projects>`__
-
-      -  `Email-service <#email-service>`__
-
-   -  `Build the client app <#build-the-client-app>`__
-
-9. `Application Tests <#application-tests>`__
-
-   -  `Code Coverage <#code-coverage>`__
+Contributing
+============
 
 Quickstart
 ==========

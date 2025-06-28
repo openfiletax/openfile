@@ -1,8 +1,8 @@
-Direct File
-===========
+Reference
+=========
 
-`Direct File <https://directfile.irs.gov>`__ is a service from the
-United States Government that provides taxpayers the option to
+OpenFile is a fork of `Direct File <https://directfile.irs.gov>`__, a service
+from the United States Government that provides taxpayers the option to
 electronically file their federal tax return for free, directly with the
 Internal Revenue Service (IRS). Direct File is an interview-based
 service that is intended to work as well on a mobile phone as it does on
@@ -55,25 +55,8 @@ For a more details on the program and its history see
 https://www.irs.gov/pub/irs-pdf/p5969.pdf and
 https://www.irs.gov/filing/irs-direct-file-for-free
 
-Where do I start?
------------------
-
-See `ONBOARDING.md </ONBOARDING.md>`__ if you want to jump into running
-Direct File locally
-
-Exempted Code
--------------
-
-Not all source code, documentation and metadata used in the development
-of Direct File is included in this repository. Specifically, any code or
-data that is considered Personally Identifiable Information (PII),
-Federal Tax Information (FTI), Sensitive But Unclassified (SBU), or
-source code developed for National Security Systems (NSS), as defined in
-40 U.S.C. § 11103, is exempt. Due to these restrictions, certain pieces
-of functionality have been removed or rewritten.
-
 Authorities
-===========
+-----------
 
 Legal foundations for work include: \* Source code Harmonization And
 Reuse in Information Technology Act” of 2024, Public Law 118 - 187 \*

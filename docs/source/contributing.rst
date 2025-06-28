@@ -1,9 +1,6 @@
 Contributing
 ============
 
-Quickstart
-==========
-
 To run everything:
 
 .. code:: bash

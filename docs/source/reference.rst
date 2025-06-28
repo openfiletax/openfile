@@ -70,3 +70,10 @@ Acquisition Reform Act (FITARA), December 2014 (National Defense
 Authorization Act for Fiscal Year 2015, Title VIII, Subtitle D) \*
 E-Government Act of 2002, Public Law 107-347 \* Clinger-Cohen Act of
 1996, Public Law 104-106
+
+.. toctree::
+   :maxdepth: 3
+
+   reference/adr
+   reference/rfc
+   reference/product

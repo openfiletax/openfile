@@ -572,3 +572,9 @@ code coverage. To run code coverage in any particular app:
 
 To view the generated report, go to
 ``<app_name>/target/site/jacoco/index.html`` and open it in a browser.
+
+.. toctree::
+   :maxdepth: 3
+
+   contributing/engineering
+   contributing/testing

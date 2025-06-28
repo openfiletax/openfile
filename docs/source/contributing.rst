@@ -24,7 +24,7 @@ the following from /direct-file/df-client
 The front end application is available at http://localhost:3000
 
 Codebase Overview
-=================
+-----------------
 
 The below provides an introduction to various portions of the codebase.
 Most applications in our system come with a readme.md to explain what

@@ -1,5 +1,5 @@
-Design docs
-===========
+Design Manual
+=============
 
 .. toctree::
    :maxdepth: 3

@@ -1,4 +1,4 @@
-**Direct File Design Guidelines & Processes**
+Direct File Design Guidelines & Processes
 =============================================
 
 **Product vision**

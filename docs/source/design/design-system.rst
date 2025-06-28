@@ -1,4 +1,4 @@
-**Direct File Design System Wiki**
+Direct File Design System Wiki
 ==================================
 
 A single source of truth to design system decisions and a collection of

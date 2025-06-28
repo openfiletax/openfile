@@ -1,8 +1,8 @@
-**Resources for Learning About Taxes**
-======================================
+Resources for Learning About Taxes
+==================================
 
-**IRS Resources:**
-------------------
+IRS Resources
+*************
 
 -  Taxpayer roadmap tool
    https://www.taxpayeradvocate.irs.gov/get-help/roadmap/
@@ -30,17 +30,19 @@
 -  IRS Pub 4801 - line item estimates (tax forms with data about how
    many people used each line) https://www.irs.gov/pub/irs-pdf/p4801.pdf
 
-**IRS Resources relevant to Direct File Tax Scope:**
-----------------------------------------------------
+IRS Resources relevant to Direct File Tax Scope
+-----------------------------------------------
 
-**Form 8889,Form 8889, Health Savings Accounts (HSAs)**
+Form 8889 and Health Savings Accounts (HSAs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Form 8889 - https://www.irs.gov/forms-pubs/about-form-8889
 
 -  Publication 969: Health Savings Accounts and Other Tax-Favored Health
    Plans - https://www.irs.gov/pub/irs-pdf/p969.pdf
 
-**Form 1099-R, Distributions From Pensions, Annuities, etc**
+Form 1099-R, Distributions From Pensions, Annuities, etc.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Form 1099-R, Distributions From Pensions, Annuities, Retirement
    or Profit-Sharing Plans, IRAs, Insurance Contracts, etc. -
@@ -58,7 +60,8 @@
    3921, 3922, 5498, 8935, and W2-G Electronically -
    https://www.irs.gov/pub/irs-pdf/p1220.pdf
 
-**Alaska Permanent Fund**
+Alaska Permanent Fund
+^^^^^^^^^^^^^^^^^^^^^
 
 -  Alaska Permanent Fund Dividend: Tax Information -
    https://pfd.alaska.gov/payments/tax-information
@@ -69,7 +72,8 @@
 -  Schedule 1 (Form 1040), Additional Income and Adjustments to Income
    PDF (Line 8g) - https://www.irs.gov/pub/irs-pdf/f1040s1.pdf
 
-**Schedule R (Form 1040), Elderly and Disabled Credit**
+Schedule R (Form 1040), Elderly and Disabled Credit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Schedule R (Form 1040), Credit for the Elderly or the Disabled
    - https://www.irs.gov/forms-pubs/about-schedule-r-form-1040
@@ -82,14 +86,16 @@
 -  Publication 554, Tax Guide for Seniors -
    https://www.irs.gov/publications/p554
 
-**Schedule B (Form 1040), Interest and Ordinary Dividends**
+Schedule B (Form 1040), Interest and Ordinary Dividends
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Schedule B (Form 1040), Interest and Ordinary Dividends -
    https://www.irs.gov/forms-pubs/about-schedule-b-form-1040
 -  About Publication 17, Your Federal Income Tax -
    https://www.irs.gov/forms-pubs/about-publication-17
 
-**Saver’s Credit (Qualified Retirement Savings Contributions Credit)**
+Saver’s Credit (Qualified Retirement Savings Contributions Credit)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Form 8880 - https://www.irs.gov/forms-pubs/about-form-8880
 -  Publication 590-A, Contributions to Individual Retirement
@@ -99,14 +105,16 @@
    Arrangements (IRAs) -
    https://www.irs.gov/forms-pubs/about-publication-590-b
 
-**Premium Tax Credit (PTC), Form 8962**
+Premium Tax Credit (PTC), Form 8962
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Form 8962 - Premium Tax Credit -
    https://www.irs.gov/forms-pubs/about-form-8962
 -  About Publication 974 - Premium Tax Credit -
    https://www.irs.gov/forms-pubs/about-publication-974
 
-**Child and Dependent Care Expenses (CDCC), Form 2441**
+Child and Dependent Care Expenses (CDCC), Form 2441
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  About Form 2441, Child and Dependent Care Expenses -
    https://www.irs.gov/forms-pubs/about-form-2441
@@ -115,8 +123,8 @@
 
    -  
 
-**Past IRS Research and Reports**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Past IRS Research and Reports
+****************************
 
 -  2021 Tax Filing and Take-Up - https://www.nber.org/papers/w28398
 -  2019 Outreach Experiments on Paper Filers and Nonfilers -
@@ -127,8 +135,8 @@
 -  IRS Direct File Pilot Program Filing Season 2024 After Action Report
    https://www.irs.gov/pub/irs-pdf/p5969.pdf
 
-**IRS-Adjacent Research and Reports**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IRS-Adjacent Research and Reports
+*********************************
 
 -  Code for America - about free direct file -
    https://codeforamerica.org/news/federal-tax-direct-file-prototype/

@@ -2,7 +2,7 @@
 
 set -e
 
-cd ../direct-file/fact-graph-scala
+cd direct-file/fact-graph-scala
 echo "cleaning fact graph..."
 sbt clean
 echo "compiling fact graph..."

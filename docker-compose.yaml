@@ -62,7 +62,6 @@ services:
 
 
   api:
-    image: openfile-api
     container_name: direct-file-api
     build:
       context: ./direct-file/backend
@@ -138,7 +137,6 @@ services:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_SCREENER_PORT:-3500}:3500"
 
   df-client:
-    image: openfile-df-client
     container_name: direct-file-app
     build:
       context: ./direct-file/df-client

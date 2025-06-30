@@ -71,7 +71,7 @@ services:
         shared-libs: ./direct-file/libs
         boms: ./direct-file/boms
         config: ./direct-file/config
-        scripts: ./direct-file/scripts
+        scripts: ./scripts
       args:
         MAVEN_OPTS: "${MAVEN_OPTS:-}"
     read_only: true

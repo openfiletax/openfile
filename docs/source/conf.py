@@ -25,5 +25,17 @@ html_theme_options = {
         "color-inline-code-background": "#f6f6f6;",
         "color-foreground-secondary": "#000",
     },
+    "light_css_variables": {
+        "color-content-foreground": "#ffffff",
+        "color-background-primary": "#212121",
+        "color-background-border": "#212121",
+        "color-sidebar-background": "#212121",
+        "color-brand-content": "#0071bc",
+        "color-brand-primary": "#0071bc",
+        "color-link": "#0071bc",
+        "color-link--hover": "#205493",
+        "color-inline-code-background": "#f6f6f6;",
+        "color-foreground-secondary": "#000",
+    },
 }
 html_title = f"OpenFile"

@@ -25,7 +25,7 @@ html_theme_options = {
         "color-inline-code-background": "#f6f6f6;",
         "color-foreground-secondary": "#000",
     },
-    "light_css_variables": {
+    "dark_css_variables": {
         "color-content-foreground": "#ffffff",
         "color-background-primary": "#212121",
         "color-background-border": "#212121",

@@ -7,10 +7,10 @@ concurrency:
 on:
   push:
     branches:
-      - openfile
+      - main
   pull_request:
     branches:
-      - openfile
+      - main
 
 jobs:
   build:

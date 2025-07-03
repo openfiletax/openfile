@@ -59,6 +59,8 @@ services:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_EMAIL_DB_PORT:-5434}:5432"
     healthcheck: *dbhealth
     stop_grace_period: 60s
+    profiles:
+      - extras
 
 
   api:
@@ -122,6 +124,8 @@ services:
       - "${DF_LISTEN_ADDRESS:-127.0.0.1}:${DF_CSPSIM_PORT:-5000}:8080"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    profiles:
+      - extras
 
 
 
@@ -181,6 +185,8 @@ services:
         condition: service_healthy
       localstack:
         condition: service_healthy
+    profiles:
+      - extras
 
   state-api:
     container_name: state-api

@@ -5,6 +5,7 @@ OpenFile is a free tax tool forked from IRS Direct File. More information at htt
 OpenFile uses Docker. To run the entirety of OpenFile:
 
 ```
+git clone https://github.com/openfiletax/openfile.git --recurse-submodules
 docker compose up -d
 ```
 

@@ -1,0 +1,3 @@
+files:
+  - source: /direct-file/df-client-app/src/locales/en.yml
+    translation: /direct-file/df/client-app/src/locales/%two_letters_code%.yml

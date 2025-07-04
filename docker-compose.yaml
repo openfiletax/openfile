@@ -148,7 +148,6 @@ services:
       additional_contexts:
         backend: ./direct-file/backend
       args:
-        BACKEND_HOSTNAME: "openfile.tax"
         DF_CLIENT_PUBLIC_PATH: "/df/file"
         DF_API_PUBLIC_PATH: "/df/file/api"
         DF_API_PORT: "${DF_CSPSIM_PORT:-8080}"

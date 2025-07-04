@@ -27,8 +27,7 @@ describe(`session clock`, () => {
     expect(clock.fiveMinutes).toEqual(300000);
     expect(clock.timer).toBeNull();
     expect(clock.alertAt).toEqual(0);
-    // TODO: enable once auto login is enabled
-    // expect(clock.autoLogoutDisabled).toBeFalsy();
+    expect(clock.autoLogoutDisabled).toBeFalsy();
   });
 
   it(`can start a timer`, () => {
@@ -40,8 +39,7 @@ describe(`session clock`, () => {
     expect(delta).toBeLessThanOrEqual(0);
     // expect `warnUser` to be called after timeout
     vi.runAllTimers();
-    // TODO: enable once auto login is enabled
-    // expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledTimes(1);
   });
 
   it(`can clear user data and send user to logout url`, () => {
@@ -63,8 +61,7 @@ describe(`session clock`, () => {
     clock.timer = setTimeout(() => null, 540000);
     clock.reset();
     // expect old timers to be cleared, if any
-    // TODO: enable once auto login is enabled
-    // expect(clear).toHaveBeenCalledTimes(1);
+    expect(clear).toHaveBeenCalledTimes(1);
     // expect timeout to be approximately nine minutes
     const delta = clock.alertAt - (Date.now() + 540000);
     expect(delta).toBeLessThanOrEqual(0);

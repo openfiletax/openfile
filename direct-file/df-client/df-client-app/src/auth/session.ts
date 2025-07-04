@@ -34,7 +34,7 @@ export class SessionClock {
     this.fiveMinutes = 5 * 60000;
     this.timer = null;
     this.alertAt = 0;
-    this.autoLogoutDisabled = import.meta.env.VITE_DISABLE_AUTO_LOGOUT ? import.meta.env.VITE_DISABLE_AUTO_LOGOUT === `true` : true;
+    this.autoLogoutDisabled = import.meta.env.VITE_DISABLE_AUTO_LOGOUT === `true`;
   }
 
   /** Send the user to the logout page. */

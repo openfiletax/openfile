@@ -279,7 +279,7 @@ services:
     environment:
       GF_INSTALL_PLUGINS: "grafana-clock-panel,grafana-simple-json-datasource"
     volumes:
-      - ./mdirect-file/onitoring/grafana_data:/var/lib/grafana
+      - ./direct-file/monitoring/grafana_data:/var/lib/grafana
       - ./direct-file/monitoring/grafana/provisioning/:/etc/grafana/provisioning/
     env_file:
       - ./direct-file/monitoring/grafana/config.monitoring

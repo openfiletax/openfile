@@ -22,6 +22,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import scala.xml.NodeSeq;
 
 import gov.irs.directfile.api.loaders.domain.ExportNode;
 import gov.irs.directfile.api.loaders.domain.TaxCompNode;
@@ -102,6 +103,7 @@ public class XmlProcessor {
         if (path == null) {
             throw new XmlProcessorException("Fact is missing path attribute");
         }
+        NodeSeq node = NodeSeq.empty;
 
         Element factElement = (Element) node;
         Element nameElement = getDirectChildElement(factElement, FACT_NAME_CHILD_NAME);
@@ -129,7 +131,7 @@ public class XmlProcessor {
         Element exportElement = getDirectChildElement(factElement, FACT_EXPORT_CHILD_NAME);
         ExportNode export = readExportNode(exportElement);
 
-        return new TaxFact(path, name, description, exportZero, writable, derived, placeholder, export);
+        return new TaxFact(path, node, name, description, exportZero, writable, derived, placeholder, export);
     }
 
     private TaxWritable readWritableNode(List<Element> writableElementList) {

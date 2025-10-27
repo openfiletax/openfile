@@ -60,7 +60,7 @@ public class FactGraphLoader {
         CompNodeConfig derivedConfig = handleFactDerived(taxFact.derived());
         CompNodeConfig placeholderConfig = handleFactDerived(taxFact.placeholder());
 
-        return new FactConfig(taxFact.path(), writableConfig, derivedConfig, placeholderConfig);
+        return new FactConfig(taxFact.path(), taxFact.node(), writableConfig, derivedConfig, placeholderConfig);
     }
 
     private WritableConfig handleFactWritable(TaxWritable writable) {

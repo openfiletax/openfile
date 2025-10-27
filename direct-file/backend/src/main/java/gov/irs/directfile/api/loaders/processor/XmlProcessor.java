@@ -103,7 +103,7 @@ public class XmlProcessor {
         if (path == null) {
             throw new XmlProcessorException("Fact is missing path attribute");
         }
-        NodeSeq nodeSeq = NodeSeq.empty;
+        NodeSeq nodeSeq = NodeSeq.Empty;
 
         Element factElement = (Element) node;
         Element nameElement = getDirectChildElement(factElement, FACT_NAME_CHILD_NAME);
@@ -137,7 +137,7 @@ public class XmlProcessor {
         Element exportElement = getDirectChildElement(factElement, FACT_EXPORT_CHILD_NAME);
         ExportNode export = readExportNode(exportElement);
 
-        return new TaxFact(path, nodeSeq, name, description, exportZero, writable, derived, placeholder, export);
+        return new TaxFact(path, nodeSeq, name, description, exportZero, writable, derived, placeholder, overrideCondition, overrideDefault, export);
     }
 
     private TaxWritable readWritableNode(List<Element> writableElementList) {

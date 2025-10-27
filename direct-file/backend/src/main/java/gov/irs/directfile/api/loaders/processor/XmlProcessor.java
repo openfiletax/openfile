@@ -137,7 +137,18 @@ public class XmlProcessor {
         Element exportElement = getDirectChildElement(factElement, FACT_EXPORT_CHILD_NAME);
         ExportNode export = readExportNode(exportElement);
 
-        return new TaxFact(path, nodeSeq, name, description, exportZero, writable, derived, placeholder, overrideCondition, overrideDefault, export);
+        return new TaxFact(
+                path,
+                nodeSeq,
+                name,
+                description,
+                exportZero,
+                writable,
+                derived,
+                placeholder,
+                overrideCondition,
+                overrideDefault,
+                export);
     }
 
     private TaxWritable readWritableNode(List<Element> writableElementList) {

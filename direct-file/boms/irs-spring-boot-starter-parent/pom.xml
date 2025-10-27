@@ -399,7 +399,7 @@
                             <version>${spotless-plugin.palantirVersion}</version>
                         </palantirJavaFormat>
                         <importOrder>
-                            <order>java,,gov.irs,gov.irs,gov.irs.directfile,\#</order>
+                            <order>java,,gov.irs,gov.irs.directfile,\#</order>
                         </importOrder>
                         <excludes>
                             <exclude>src/main/java/gov/irs/directfile/api/xmlgeneration/xml/**</exclude>

@@ -39,4 +39,14 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
     public Option<gov.irs.factgraph.definitions.fact.CompNodeConfigTrait> placeholder() {
         return Option.apply(placeholder);
     }
+
+    @Override
+    public Option<gov.irs.factgraph.definitions.fact.CompNodeConfigTrait> overrideCondition() {
+        return Option.apply(overrideCondition);
+    }
+
+    @Override
+    public Option<gov.irs.factgraph.definitions.fact.CompNodeConfigTrait> overrideDefault() {
+        return Option.apply(overrideDefault);
+    }
 }

@@ -11,7 +11,7 @@ RUN sbt compile package publishM2
 
 # build shared dependencies
 FROM eclipse-temurin:21-jdk-alpine AS shared-dependencies-builder
-COPY --from=factgraph-builder /root/.m2/repository/gov/irs/factgraph/fact-graph_3/ /root/.m2/repository/gov/irs/factgraph/fact-graph_3/
+COPY --from=factgraph-builder /root/.m2/repository/gov/irs/factgraph/factgraph_3/ /root/.m2/repository/gov/irs/factgraph/factgraph_3/
 ARG MAVEN_OPTS=""
 WORKDIR /build/
 COPY --from=config . ./config/

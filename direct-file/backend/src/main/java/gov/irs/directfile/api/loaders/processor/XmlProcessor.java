@@ -103,7 +103,7 @@ public class XmlProcessor {
         if (path == null) {
             throw new XmlProcessorException("Fact is missing path attribute");
         }
-        NodeSeq nodeSeq = NodeSeq.Empty;
+        NodeSeq nodeSeq = NodeSeq.Empty();
 
         Element factElement = (Element) node;
         Element nameElement = getDirectChildElement(factElement, FACT_NAME_CHILD_NAME);

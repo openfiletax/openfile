@@ -6,12 +6,14 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
 
     public FactConfig(
             String path,
+            gov.irs.factgraph.definitions.fact.NodeSeq node,
             gov.irs.factgraph.definitions.fact.WritableConfigTrait writable,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait derived,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait placeholder,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait overrideCondition,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait overrideDefault) {
         this.path = path;
+        this.node = node;
         this.writable = writable;
         this.derived = derived;
         this.placeholder = placeholder;
@@ -20,6 +22,7 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
     }
 
     public String path;
+    public gov.irs.factgraph.definitions.fact.NodeSeq node;
     public gov.irs.factgraph.definitions.fact.WritableConfigTrait writable;
     public gov.irs.factgraph.definitions.fact.CompNodeConfigTrait derived;
     public gov.irs.factgraph.definitions.fact.CompNodeConfigTrait placeholder;
@@ -29,6 +32,11 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
     @Override
     public String path() {
         return path;
+    }
+
+    @Override
+    public gov.irs.factgraph.definitions.fact.NodeSeq node() {
+        return node;
     }
 
     @Override

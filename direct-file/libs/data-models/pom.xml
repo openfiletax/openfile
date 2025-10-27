@@ -74,7 +74,7 @@
         </dependency>
         <dependency>
             <groupId>gov.irs.factgraph</groupId>
-            <artifactId>factgraph</artifactId>
+            <artifactId>fact-graph_3</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.spotbugs</groupId>

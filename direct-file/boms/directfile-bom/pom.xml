@@ -37,7 +37,7 @@
 			</dependency>
             <dependency>
                 <groupId>gov.irs.factgraph</groupId>
-                <artifactId>factgraph</artifactId>
+                <artifactId>fact-graph_3</artifactId>
                 <version>${fact-graph.version}</version>
             </dependency>
 

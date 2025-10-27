@@ -262,7 +262,7 @@
                 <version>${data-models.version}</version>
             </dependency>
             <dependency>
-                <groupId>gov.irs.factgraph</groupId>
+                <groupId>gov.irs</groupId>
                 <artifactId>factgraph_3</artifactId>
                 <version>${fact-graph.version}</version>
             </dependency>
@@ -399,7 +399,7 @@
                             <version>${spotless-plugin.palantirVersion}</version>
                         </palantirJavaFormat>
                         <importOrder>
-                            <order>java,,gov.irs,gov.irs.factgraph,gov.irs.directfile,\#</order>
+                            <order>java,,gov.irs,gov.irs,gov.irs.directfile,\#</order>
                         </importOrder>
                         <excludes>
                             <exclude>src/main/java/gov/irs/directfile/api/xmlgeneration/xml/**</exclude>

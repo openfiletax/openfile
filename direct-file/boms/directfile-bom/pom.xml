@@ -36,7 +36,7 @@
 				<version>${data-models.version}</version>
 			</dependency>
             <dependency>
-                <groupId>gov.irs.factgraph</groupId>
+                <groupId>gov.irs</groupId>
                 <artifactId>factgraph_3</artifactId>
                 <version>${fact-graph.version}</version>
             </dependency>

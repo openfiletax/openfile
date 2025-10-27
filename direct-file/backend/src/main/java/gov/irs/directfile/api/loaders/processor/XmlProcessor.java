@@ -103,7 +103,7 @@ public class XmlProcessor {
         if (path == null) {
             throw new XmlProcessorException("Fact is missing path attribute");
         }
-        NodeSeq node = NodeSeq.empty;
+        NodeSeq nodeSeq = NodeSeq.empty;
 
         Element factElement = (Element) node;
         Element nameElement = getDirectChildElement(factElement, FACT_NAME_CHILD_NAME);
@@ -127,11 +127,17 @@ public class XmlProcessor {
         // placeholder
         TaxCompNode placeholder = readSingleCompNodeFromChild(factElement, FACT_PLACEHOLDER_CHILD_NAME, path);
 
+        // overrideCondition
+        TaxCompNode overrideCondition = readSingleCompNodeFromChild(factElement, FACT_PLACEHOLDER_CHILD_NAME, path);
+
+        // overrideDefault
+        TaxCompNode overrideDefault = readSingleCompNodeFromChild(factElement, FACT_PLACEHOLDER_CHILD_NAME, path);
+
         // Export
         Element exportElement = getDirectChildElement(factElement, FACT_EXPORT_CHILD_NAME);
         ExportNode export = readExportNode(exportElement);
 
-        return new TaxFact(path, node, name, description, exportZero, writable, derived, placeholder, export);
+        return new TaxFact(path, nodeSeq, name, description, exportZero, writable, derived, placeholder, export);
     }
 
     private TaxWritable readWritableNode(List<Element> writableElementList) {

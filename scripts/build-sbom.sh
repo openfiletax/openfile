@@ -65,9 +65,9 @@ cyclonedx merge --input-files \
   status/target/bom.json \
   state-api/target/bom.json \
   data-import/target/bom.json \
-  fact-graph-scala/target/fact-graph-0.1.0-SNAPSHOT.bom.xml \
-  fact-graph-scala/js/target/fact-graph-0.1.0-SNAPSHOT.bom.xml \
-  fact-graph-scala/jvm/target/fact-graph-0.1.0-SNAPSHOT.bom.xml \
+  fact-graph-scala/target/factgraph-3.1.0-SNAPSHOT.bom.xml \
+  fact-graph-scala/js/target/factgraph-3.1.0-SNAPSHOT.bom.xml \
+  fact-graph-scala/jvm/target/factgraph-3.1.0-SNAPSHOT.bom.xml \
   fact-graph-scala/manual-scala-sbom.xml \
   libs/data-models/target/bom.json \
   ../utils/pdf-to-yaml/target/bom.json \

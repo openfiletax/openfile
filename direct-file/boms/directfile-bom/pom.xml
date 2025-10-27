@@ -12,7 +12,7 @@
         <starter-boilerplate.version>0.0.1-SNAPSHOT</starter-boilerplate.version>
         <starter-validation.version>0.0.1-SNAPSHOT</starter-validation.version>
         <data-models.version>0.0.1-SNAPSHOT</data-models.version>
-        <fact-graph.version>0.1.0-SNAPSHOT</fact-graph.version>
+        <fact-graph.version>3.1.0-SNAPSHOT</fact-graph.version>
         <mef-client-sdk.version>1.0</mef-client-sdk.version>
         <webservices.version>4.0.4</webservices.version>
         <xmlsec.version>4.0.2</xmlsec.version>

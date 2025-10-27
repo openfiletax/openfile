@@ -1,12 +1,13 @@
 package gov.irs.directfile.api.factgraph;
 
 import scala.Option;
+import scala.xml.NodeSeq;
 
 public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfigTrait {
 
     public FactConfig(
             String path,
-            gov.irs.factgraph.definitions.fact.NodeSeq node,
+            NodeSeq node,
             gov.irs.factgraph.definitions.fact.WritableConfigTrait writable,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait derived,
             gov.irs.factgraph.definitions.fact.CompNodeConfigTrait placeholder,
@@ -22,7 +23,7 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
     }
 
     public String path;
-    public gov.irs.factgraph.definitions.fact.NodeSeq node;
+    public NodeSeq node;
     public gov.irs.factgraph.definitions.fact.WritableConfigTrait writable;
     public gov.irs.factgraph.definitions.fact.CompNodeConfigTrait derived;
     public gov.irs.factgraph.definitions.fact.CompNodeConfigTrait placeholder;
@@ -35,7 +36,7 @@ public class FactConfig implements gov.irs.factgraph.definitions.fact.FactConfig
     }
 
     @Override
-    public gov.irs.factgraph.definitions.fact.NodeSeq node() {
+    public NodeSeq node() {
         return node;
     }
 

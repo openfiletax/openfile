@@ -12,4 +12,6 @@ public record TaxFact(
         TaxWritable writable,
         TaxCompNode derived,
         TaxCompNode placeholder,
+        TaxCompNode overrideCondition,
+        TaxCompNode overrideDefault,
         ExportNode export) {}

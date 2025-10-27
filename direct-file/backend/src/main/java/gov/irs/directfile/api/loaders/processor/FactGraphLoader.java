@@ -59,8 +59,10 @@ public class FactGraphLoader {
         WritableConfig writableConfig = handleFactWritable(taxFact.writable());
         CompNodeConfig derivedConfig = handleFactDerived(taxFact.derived());
         CompNodeConfig placeholderConfig = handleFactDerived(taxFact.placeholder());
+        CompNodeConfig overrideConditionConfig = handleFactDerived(taxFact.overrideCondition());
+        CompNodeConfig overrideDefaultConfig = handleFactDerived(taxFact.overrideDefault());
 
-        return new FactConfig(taxFact.path(), taxFact.node(), writableConfig, derivedConfig, placeholderConfig);
+        return new FactConfig(taxFact.path(), taxFact.node(), writableConfig, derivedConfig, placeholderConfig, overrideConditionConfig, overrideDefaultConfig);
     }
 
     private WritableConfig handleFactWritable(TaxWritable writable) {

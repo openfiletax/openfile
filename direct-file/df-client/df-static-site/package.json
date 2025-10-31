@@ -62,7 +62,7 @@
     "browserslist-to-esbuild": "^1.2.0",
     "eslint-plugin-df-rules": "^1.0.0",
     "exceljs": "^4.3.0",
-    "happy-dom": "^15.10.2",
+    "happy-dom": "^20.0.2",
     "postcss": "^8.4.31",
     "prettier": "^2.8.7",
     "sass": "^1.63.5",

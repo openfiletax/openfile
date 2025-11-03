@@ -47,8 +47,7 @@ public class SecurityConfiguration {
 
         log.info("Adding SecurityFilterChain: anonymousFilterChain");
         try {
-            http.csrf(AbstractHttpConfigurer::disable)
-                    .cors(Customizer.withDefaults())
+            http.cors(Customizer.withDefaults())
                     .securityMatchers(securityMatchers -> securityMatchers.requestMatchers("/**"))
                     .authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll())
                     .sessionManagement(

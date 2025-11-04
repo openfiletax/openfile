@@ -4,6 +4,7 @@ import { ConcretePath, FactGraph, ScalaList } from '@irs/js-factgraph-scala';
 import { singleNoDependentsWithTwoW2s01 as snapshotScenario01 } from './goldenScenarios.js';
 import { FactValue } from '../../types/core.js';
 import { setupFactGraph } from '../setupFactGraph.js';
+import { facts } from '../../fact-dictionary/generated/facts.js';
 
 type FactStatus = { isComplete: boolean; value?: string };
 export interface ExportedFactRecord {
@@ -14,8 +15,15 @@ export interface ScenarioTest {
   writableFacts: { [path: string]: FactValue };
   expectedExportedFacts: ExportedFactRecord;
 }
-// TODO: parse backend/src/main/resources/tax files for all fact paths with 'mef="true"' and put in array
-const exportedDerivedFactPaths = [`/standardOrItemizedDeductions`, `/agi`, `/totalIncome`, `/achPaymentDate`];
+
+const getExportedFactPaths = (): Array<String> => {
+  return facts
+    .filter((f) => f.Export?.['@mef'] == "true")
+    .map((f) => f['@path'])
+    // TODO: eventually remove
+    .filter((f) => f in snapshotScenario01)
+}
+const exportedDerivedFactPaths = getExportedFactPaths();
 
 // Generates a golden object that represents the expected completeness and derived fact values for a given scenario
 const _createGoldenScenarioObject = (factGraph: FactGraph): ExportedFactRecord => {

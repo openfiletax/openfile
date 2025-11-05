@@ -192,7 +192,7 @@
     <Fact path="/maxCtcAmount">
       <Name>Maximum child tax credit amount</Name>
       <Description>The maximum child tax credit per child</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>2000</Dollar>
@@ -287,7 +287,7 @@
     <Fact path="/maxOdcAmount">
       <Name>Maximum credit amount for other dependents</Name>
       <Description>The maximum credit for other dependents, per dependent</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>500</Dollar>
@@ -317,7 +317,7 @@
         line 9 of Schedule
         8812.</Description>
       <Export mef="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Switch>
@@ -809,7 +809,7 @@
       <Description>The maximum additional tax credit per child
         Rev Proc .05 Child Tax Credit §24(d)(1)(A)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>1700</Dollar>
@@ -859,7 +859,7 @@
       <Description>The amount of earned income that must be exceeded in order to receive the
         refundable additional child
         tax credit.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>2500</Dollar>
@@ -1135,7 +1135,7 @@
     <Fact path="/pdf8812ContinueFromLine20">
       <Name>Continue Schedule 8812 from Line 20</Name>
       <Description>Whether to continue in sequence from Line 20.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <!-- Note there is logic for PR residents not reflected here as it is out of scope. -->
       <Derived>
         <Switch>

@@ -568,7 +568,7 @@
       <Writable>
         <Day />
         <Limit type="Max">
-          <Day>2025-01-01</Day>
+          <Day>2026-01-01</Day>
         </Limit>
       </Writable>
     </Fact>
@@ -1587,7 +1587,7 @@
         works regardless of whether it is a leap year or not.
       </Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Switch>
@@ -2667,7 +2667,7 @@
         §152(d)(1)(B).
         Rev Proc .24 Gross Income Limitation for a Qualifying Relative §152(d)(1)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>5050</Dollar>

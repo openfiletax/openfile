@@ -6,7 +6,7 @@
         IRS notice 2023-75, adjusted limitation under
         25B(b)(1)(C) and 25B(b)(1)(D)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Dollar>76500</Dollar>
       </Derived>
@@ -17,7 +17,7 @@
         IRS notice 2023-75, adjusted limitation under
         25B(b)(1)(C) and 25B(b)(1)(D)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Dollar>57375</Dollar>
       </Derived>
@@ -28,7 +28,7 @@
         IRS notice 2023-75,
         adjusted limitation under 25B(b)(1)(C) and 25B(b)(1)(D)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Dollar>38250</Dollar>
       </Derived>
@@ -71,7 +71,7 @@
         IRS notice 2023-75, adjusted limitation under
         25B(b)(1)(A)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Switch>
           <Case>
@@ -107,7 +107,7 @@
         IRS notice 2023-75, adjusted limitation under
         25B(b)(1)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Switch>
           <Case>

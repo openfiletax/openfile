@@ -68,7 +68,7 @@
     <Fact path="/taxDay">
       <Description>The tax day for the primary filer, taking their contact address into account</Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
       <Derived>
         <Switch>
 
@@ -3386,12 +3386,12 @@
     <Fact path="/secondaryFilerDateOfDeath">
       <Description>The date of death of the secondary filer.</Description>
       <Export downstreamFacts="true" />
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Writable>
         <Day />
         <Limit type="Max">
-          <Day>2025-01-01</Day>
+          <Day>2026-01-01</Day>
         </Limit>
       </Writable>
     </Fact>
@@ -3869,7 +3869,7 @@
         personal exemption, but due to suspension of the personal exemption under TCJA, the
         exemption was reduced to $0.
         While the exemption is $0, IRS will use $5 as the threshold.)</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>

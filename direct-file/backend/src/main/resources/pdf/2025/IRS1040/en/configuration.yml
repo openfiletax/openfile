@@ -1,0 +1,235 @@
+includeWhen: /pdfNotOver65SRIndicator
+form:
+  topmostSubform[0]: 
+    Page1[0]: 
+      # f1_01[0]: 
+      # f1_02[0]: 
+      # f1_03[0]: 
+      # c1_1[0]:
+      # c1_2[0]:
+      # f1_04[0]: 
+      # c1_3[0]:
+      # f1_05[0]: 
+      # f1_06[0]: 
+      # f1_07[0]: 
+      # f1_08[0]: 
+      # f1_09[0]: 
+      # f1_10[0]: 
+      # c1_4[0]: Off
+      # f1_11[0]: 
+      # f1_12[0]: 
+      # f1_13[0]: 
+      f1_14[0]: /primaryFiler/firstNameAndInitial
+      f1_15[0]: /primaryFiler/lastName
+      f1_16[0]: /primaryFiler/tin
+      f1_17[0]: /pdfSecondaryFiler/firstNameAndInitial
+      f1_18[0]: /pdfSecondaryFiler/lastName
+      f1_19[0]: /pdfSpouseTin
+      Address_ReadOrder[0]: 
+        f1_20[0]: /address/streetAddress space /address/streetAddressLine2
+        # f1_21[0]:
+        f1_22[0]: /address/city
+        f1_23[0]: /address/stateOrProvence
+        f1_24[0]: /address/postalCode
+        # f1_25[0]:
+        # f1_26[0]:
+        # f1_27[0]:
+      # c1_5[0]: Off
+      c1_6[0]: /primaryFiler/potusElection
+      c1_7[0]: /pdfSecondaryFiler/potusElection
+      Checkbox_ReadOrder[0]: 
+        c1_8[0]: /isFilingStatusSingle
+        c1_8[1]: /isFilingStatusMFJ
+        c1_8[2]: /isFilingStatusMFS
+        # f1_28[0]: 
+      c1_8[0]: /isFilingStatusHOH
+      c1_8[1]: Off/isFilingStatusQSS
+      f1_29[0]: /mfsSpouseOrQSSAndHOHNotDependentChild space space /xmlNraLiteralCd
+      # c1_9[0]: Off
+      # f1_30[0]: 
+      # c1_10[0]: Off
+      c1_10[1]: /notDigitalAssets
+      Dependents_ReadOrder[0]: 
+        c1_11[0]: /claimingMoreThan4Dependents
+      # Table_Dependents[0]: 
+        # Row1[0]: 
+          # f1_31[0]: 
+          # f1_32[0]: 
+          # f1_33[0]: 
+          # f1_34[0]: 
+        # Row2[0]: 
+          # f1_35[0]: 
+          # f1_36[0]: 
+          # f1_37[0]: 
+          # f1_38[0]: 
+        # Row3[0]: 
+          # f1_39[0]: 
+          # f1_40[0]: 
+          # f1_41[0]: 
+          # f1_42[0]: 
+        # Row4[0]: 
+          # f1_43[0]: 
+          # f1_44[0]: 
+          # f1_45[0]: 
+          # f1_46[0]: 
+        # Row5[0]: 
+          # Dependent1[0]: 
+            # c1_12[0]: Off
+            # c1_13[0]: Off
+          # Dependent2[0]: 
+            # c1_14[0]: Off
+            # c1_15[0]: Off
+          # Dependent3[0]: 
+            # c1_16[0]: Off
+            # c1_17[0]: Off
+          # Dependent4[0]: 
+            # c1_18[0]: Off
+            # c1_19[0]: Off
+        # Row6[0]: 
+          # Dependent1[0]: 
+            # c1_20[0]: Off
+            # c1_21[0]: Off
+          # Dependent2[0]: 
+            # c1_22[0]: Off
+            # c1_23[0]: Off
+          # Dependent3[0]: 
+            # c1_24[0]: Off
+            # c1_25[0]: Off
+          # Dependent4[0]: 
+            # c1_26[0]: Off
+            # c1_27[0]: Off
+        # Row7[0]: 
+          # Dependent1[0]: 
+            # c1_28[0]: Off
+            # c1_28[1]: Off
+          # Dependent2[0]: 
+            # c1_29[0]: Off
+            # c1_29[1]: Off
+          # Dependent3[0]: 
+            # c1_30[0]: Off
+            # c1_30[1]: Off
+          # Dependent4[0]: 
+            # c1_31[0]: Off
+            # c1_31[1]: Off
+      # c1_32[0]: Off
+      f1_47[0]: /wages
+      # f1_48[0]: 
+      # f1_49[0]: 
+      # f1_50[0]: 
+      # f1_51[0]: 
+      # f1_52[0]: 
+      # f1_53[0]: 
+      # f1_54[0]: 
+      # f1_55[0]: 
+      # f1_56[0]: 
+      # f1_57[0]: 
+      # f1_58[0]: 
+      # f1_59[0]: 
+      # f1_60[0]: 
+      # f1_61[0]: 
+      # c1_33[0]: Off
+      # c1_34[0]: Off
+      # f1_62[0]: 
+      # f1_63[0]: 
+      # c1_35[0]: Off
+      # c1_36[0]: Off
+      # c1_37[0]: Off
+      # f1_64[0]: 
+      # f1_65[0]: 
+      # f1_66[0]: 
+      # c1_38[0]: Off
+      # c1_39[0]: Off
+      # c1_40[0]: Off
+      # f1_67[0]: 
+      # f1_68[0]: 
+      # f1_69[0]: 
+      # c1_41[0]: Off
+      # c1_42[0]: Off
+      # f1_70[0]: 
+      # c1_43[0]: Off
+      # c1_44[0]: Off
+      # f1_71[0]: 
+      # f1_72[0]: 
+      # f1_73[0]: 
+      # f1_74[0]: 
+      # f1_75[0]: 
+    # Page2[0]: 
+      # f2_01[0]: 
+      # c2_1[0]: Off
+      # c2_2[0]: Off
+      # c2_3[0]: Off
+      # c2_4[0]: Off
+      # c2_5[0]: Off
+      # c2_6[0]: Off
+      # c2_7[0]: Off
+      # c2_8[0]: Off
+      # f2_02[0]: 
+      # f2_03[0]: 
+      # f2_04[0]: 
+      # f2_05[0]: 
+      # f2_06[0]: 
+      c2_11[0]: /form8814Included
+      c2_12[0]: /form4972Included
+      c2_13[0]: /formOtherIncluded
+      f2_07[0]: /otherFormName
+      f2_08[0]: /tentativeTaxFromTaxableIncome
+      f2_09[0]: /totalAdditionalTaxesOwed
+      f2_10[0]: /totalTentativeTax
+      f2_11[0]: /totalCtcAndOdc
+      f2_12[0]: /line8OfSchedule3
+      f2_13[0]: /nonRefundableCredits
+      f2_14[0]: /taxLessNonRefundableCredits
+      f2_15[0]: /line21OfSchedule2
+      f2_16[0]: /totalTax
+      f2_17[0]: /formW2Withholding
+      f2_18[0]: /form1099Withholding
+      f2_19[0]: /otherFormWithholding
+      f2_20[0]: /estimatedAndFromLastYear
+      # f2_21[0]
+      # SSN_ReadOrder[0]: 
+        # f2_22[0]: 
+      f2_23[0]: /earnedIncomeCredit
+      # c2_12[0]: Off
+      # c2_13[0]: Off
+      # Line28_ReadOrder[0]: 
+        # c2_14[0]: Off
+      f2_24[0]: /additionalCtc
+      f2_25[0]: /americanOpportunityCredit
+      # f2_26[0]: 
+      f2_27[0]: /otherPaymentsAndRefundableCreditsTotal
+      f2_28[0]: /totalOtherPaymentsRefundableCredits
+      f2_29[0]: /totalPayments
+      f2_30[0]: /overpayment
+      c2_15[0]: /form8888Attached
+      f2_30[0]: /overpayment
+      RoutingNo[0]:
+        f2_32[0]: ~pdfRoutingNumberOrXs
+      c2_16[0]: /refundAccountIsChecking
+      c2_16[1]: /refundAccountIsSavings
+      AccountNo[0]:
+        f2_33[0]: ~pdfAccountNumberOrXs
+      f2_34[0]: /appliedToNextYearEstimated
+      f2_35[0]: /balanceDue
+      # f2_36[0]: 
+      c2_17[0]: /wantsThirdPartyDesignee
+      c2_17[1]: /wantsThirdPartyDesigneeNo
+      f2_37[0]: /pdfThirdPartyDesigneeFullName
+      f2_38[0]: /pdfThirdPartyDesigneePhone
+      f2_39[0]: /pdfThirdPartyDesigneePin
+      f2_40[0]: /primaryFiler/mefOccupation
+      f2_41[0]: /primaryFiler/identityPin
+      f2_42[0]: /pdfSecondaryFiler/mefOccupation
+      f2_43[0]: /pdfSecondaryFiler/identityPin
+      f2_44[0]: /phone
+      f2_45[0]: /email
+      # f2_46[0]: 
+      # f2_47[0]: 
+      # c2_18[0]: Off
+      # f2_48[0]: 
+      # f2_49[0]: 
+      # f2_50[0]: 
+      # f2_51[0]: 
+otherRequiredFacts:
+  - /dueRefund
+  - /xmlRefundBankAccount
+  - /socialSecurityBenefits

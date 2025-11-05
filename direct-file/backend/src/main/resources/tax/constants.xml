@@ -973,7 +973,7 @@
       <Export downstreamFacts="true" />
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>4150</Dollar>
+        <Dollar>4300</Dollar>
       </Derived>
     </Fact>
 
@@ -986,7 +986,7 @@
       <Export downstreamFacts="true" />
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>8300</Dollar>
+        <Dollar>8550</Dollar>
       </Derived>
     </Fact>
 

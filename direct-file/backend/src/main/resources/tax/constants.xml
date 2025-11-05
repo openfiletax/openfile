@@ -39,7 +39,7 @@
       <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Int>2024</Int>
+        <Int>2025</Int>
       </Derived>
     </Fact>
 
@@ -1032,7 +1032,7 @@
         https://www.irs.gov/pub/irs-drop/rp-23-23.pdf)</Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>1600</Dollar>
+        <Dollar>1650</Dollar>
       </Derived>
     </Fact>
 
@@ -1041,7 +1041,7 @@
         https://www.irs.gov/pub/irs-drop/rp-23-23.pdf)</Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>3200</Dollar>
+        <Dollar>3300</Dollar>
       </Derived>
     </Fact>
 
@@ -1050,7 +1050,7 @@
         https://www.irs.gov/pub/irs-drop/rp-23-23.pdf)</Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>8050</Dollar>
+        <Dollar>8300</Dollar>
       </Derived>
     </Fact>
 
@@ -1059,7 +1059,7 @@
         https://www.irs.gov/pub/irs-drop/rp-23-23.pdf)</Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>16100</Dollar>
+        <Dollar>16600</Dollar>
       </Derived>
     </Fact>
 

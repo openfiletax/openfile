@@ -8,7 +8,7 @@
       </Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>76500</Dollar>
+        <Dollar>79000</Dollar>
       </Derived>
     </Fact>
 
@@ -19,7 +19,7 @@
       </Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Dollar>57375</Dollar>
+        <Dollar>59250</Dollar>
       </Derived>
     </Fact>
 
@@ -79,7 +79,7 @@
               <Dependency module="filingStatus" path="/isFilingStatusMFJ" />
             </When>
             <Then>
-              <Dollar>46000</Dollar>
+              <Dollar>47500</Dollar>
             </Then>
           </Case>
           <Case>
@@ -87,7 +87,7 @@
               <Dependency module="filingStatus" path="/isFilingStatusHOH" />
             </When>
             <Then>
-              <Dollar>34500</Dollar>
+              <Dollar>35625</Dollar>
             </Then>
           </Case>
           <Case>
@@ -95,7 +95,7 @@
               <True />
             </When>
             <Then>
-              <Dollar>23000</Dollar>
+              <Dollar>23750</Dollar>
             </Then>
           </Case>
         </Switch>
@@ -115,7 +115,7 @@
               <Dependency module="filingStatus" path="/isFilingStatusMFJ" />
             </When>
             <Then>
-              <Dollar>50000</Dollar>
+              <Dollar>51000</Dollar>
             </Then>
           </Case>
           <Case>
@@ -123,7 +123,7 @@
               <Dependency module="filingStatus" path="/isFilingStatusHOH" />
             </When>
             <Then>
-              <Dollar>37500</Dollar>
+              <Dollar>38250</Dollar>
             </Then>
           </Case>
           <Case>

@@ -1004,26 +1004,7 @@
       <Description>Total value of the Alaska Permanent Fund</Description>
       <TaxYear>2025</TaxYear>
       <Derived>
-        <Add>
-          <Dependency path="/alaskaPfdAmountDividendPortion" />
-          <Dependency path="/alaskaPfdAmountEnergyReliefPaymentPortion" />
-        </Add>
-      </Derived>
-    </Fact>
-
-    <Fact path="/alaskaPfdAmountDividendPortion">
-      <Description>Portion of the Alaska Permanent Fund that was the normal dividend distribution</Description>
-      <TaxYear>2025</TaxYear>
-      <Derived>
-        <Dollar>1403.83</Dollar>
-      </Derived>
-    </Fact>
-
-    <Fact path="/alaskaPfdAmountEnergyReliefPaymentPortion">
-      <Description>Portion of the Alaska Permanent Fund that was a one-time engergy relief payment</Description>
-      <TaxYear>2025</TaxYear>
-      <Derived>
-        <Dollar>298.17</Dollar>
+        <Dollar>1000</Dollar>
       </Derived>
     </Fact>
 

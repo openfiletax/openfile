@@ -546,6 +546,10 @@
     "type": "java.lang.Integer",
     "value": 0
   },
+  "/bonaFideResidentOfPuertoRico": {
+    "type": "java.lang.Boolean",
+    "value": false
+  },
   "/xmlThreeOrMoreCtcEligibleDependents": {
     "type": "java.lang.Boolean",
     "value": false

@@ -13,6 +13,7 @@ Lines that do not have / in column 1 are comments.
 /annualMaxPremiumAssitance
 /annualPtcAllowed
 /balanceDue
+/bonaFideResidentOfPuertoRico
 /cdccAdjustedDependentCareBenefitsAmount
 /cdccCareProviders/*/address/city
 /cdccCareProviders/*/address/stateOrProvence

@@ -79,7 +79,7 @@ jobs:
           cd direct-file/df-client
           npm ci
 
-      - name: Build fact dictioanry
+      - name: Build fact dictionary
         run: |
           cd direct-file/df-client/df-client-app
           npm run generate-fact-dictionary

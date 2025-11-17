@@ -109,7 +109,6 @@ public class ExportableFacts extends HashMap<String, ExportableData<?>> {
                                 var sanitizedCollection = collection.sanitized(key, filingStatus);
                                 map.put(key, sanitizedCollection);
                             } else {
-                                // TODO: sanitize non-collection data?
                                 map.put(key, value);
                             }
                         },

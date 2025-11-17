@@ -528,19 +528,31 @@
       </Derived>
     </Fact>
 
+    <Fact path="/bonaFideResidentOfPuertoRico">
+      <Description>The TP is a bona fide resident of Puerto Rico</Description>
+
+      <Writable>
+        <Boolean />
+      </Writable>
+      <Placeholder>
+        <False />
+      </Placeholder>
+    </Fact>
+
     <Fact path="/xmlThreeOrMoreCtcEligibleDependents">
       <Name>Three of more CTC eligible CTC dependents</Name>
       <Description>Whether we have 3 CTC eligible dependents and potential ACTC. Encountered on line
         20 of Schedule
         8812.
-        Determines if lines 21-26 are applicable. TODO in future tax years: take Puerto Rico
-        residency into
-        account
+        Determines if lines 21-26 are applicable.
       </Description>
       <Export mef="true" />
       <Derived>
         <All>
-          <Dependency path="/xmlHasPotentialActc" />
+          <Any>
+            <Dependency path="/xmlHasPotentialActc" />
+            <Dependency path="/bonaFideResidentOfPuertoRico" />
+          </Any>
           <Dependency path="/threeOrMoreCtcEligibleDependents" />
         </All>
       </Derived>

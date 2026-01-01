@@ -45,7 +45,7 @@ jobs:
           cache: maven
 
       - name: Install sbt
-        uses: coursier/setup-action@v1
+        uses: coursier/setup-action@v2
         with:
           apps: sbt
 

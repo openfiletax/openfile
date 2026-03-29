@@ -18,7 +18,7 @@ direct-file:
   pdfs:
     configured-pdfs:
       - name: IRS1040S8812
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040S8812/en/f1040s8_accessible.pdf"
         location-type: directory
@@ -26,7 +26,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S8812
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040S8812/es/f1040s8s_accessible.pdf"
         location-type: directory
@@ -34,7 +34,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: FORM9000
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/FORM9000/en/f9000_2021.pdf"
         location-type: directory
@@ -42,7 +42,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: FORM9000
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/FORM9000/es/f9000sp_2021.pdf"
         location-type: directory
@@ -50,7 +50,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S1
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040S1/en/f1040s1.pdf"
         location-type: directory
@@ -58,7 +58,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S1
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040S1/es/f1040s1s.pdf"
         location-type: directory
@@ -66,7 +66,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S2
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040S2/en/f1040s2.pdf"
         location-type: directory
@@ -74,7 +74,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S2
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040S2/es/f1040s2s.pdf"
         location-type: directory
@@ -82,7 +82,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S3
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040S3/en/f1040s3.pdf"
         location-type: directory
@@ -90,7 +90,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040S3
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040S3/es/f1040s3s.pdf"
         location-type: directory
@@ -98,7 +98,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040SB
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040SB/en/f1040sb_accessible.pdf"
         location-type: directory
@@ -106,7 +106,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040EIC
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040EIC/en/f1040sei-p.pdf"
         location-type: directory
@@ -114,7 +114,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040EIC
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040EIC/es/f1040sep-p.pdf"
         location-type: directory
@@ -122,7 +122,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040/en/f1040.pdf"
         location-type: directory
@@ -130,7 +130,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040/es/f1040sp.pdf"
         location-type: directory
@@ -138,7 +138,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040SR
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS1040SR/en/f1040s-p.pdf"
         location-type: directory
@@ -146,7 +146,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS1040SR
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS1040SR/es/f1040srs-p.pdf"
         location-type: directory
@@ -154,7 +154,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/DEPENDENTS_STATEMENT/en/1040_AdditionalDependents.pdf"
         location-type: directory
@@ -162,7 +162,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/DEPENDENTS_STATEMENT/es/1040_Dependientes_Adicionales.pdf"
         location-type: directory
@@ -170,7 +170,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRSW2
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRSW2/en/fw2.pdf"
         location-type: directory
@@ -178,7 +178,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: SCHEDULE_LEP
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/SCHEDULE_LEP/en/f1040lep-p.pdf"
         location-type: directory
@@ -186,7 +186,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: SCHEDULE_LEP
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/SCHEDULE_LEP/es/f1040les-p.pdf"
         location-type: directory
@@ -194,7 +194,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: SCHEDULE_R
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/SCHEDULE_R/en/f1040sr_accessible.pdf"
         location-type: directory
@@ -202,7 +202,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS8862
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS8862/en/f8862_accessible.pdf"
         location-type: directory
@@ -210,7 +210,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS8862
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/IRS8862/es/f8862sp_accessible.pdf"
         location-type: directory
@@ -218,7 +218,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS8880
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS8880/en/f8880_accessible-p.pdf"
         location-type: directory
@@ -226,7 +226,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS8889
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS8889/en/f8889_accessible.pdf"
         location-type: directory
@@ -234,7 +234,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS8962
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS8962/en/f8962.pdf"
         location-type: directory
@@ -242,7 +242,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: CTC_DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/CTC_DEPENDENTS_STATEMENT/en/Additional_statement_for_Form_8862_-_Additional_Child_Tax_Credit.pdf"
         location-type: directory
@@ -250,7 +250,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: CTC_DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/CTC_DEPENDENTS_STATEMENT/es/SPANISH_Additional_statement_for_Form_8862_-_Additional_Child_Tax_Credit.pdf"
         location-type: directory
@@ -258,7 +258,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: ODC_DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/ODC_DEPENDENTS_STATEMENT/en/Additional_statement_for_Form_8862_-_Credit_for_other_dependents.pdf"
         location-type: directory
@@ -266,7 +266,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: ODC_DEPENDENTS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/ODC_DEPENDENTS_STATEMENT/es/SPANISH_Additional_statement_for_Form_8862_-_Credit_for_other_dependents.pdf"
         location-type: directory
@@ -274,7 +274,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS2441
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/IRS2441/en/f2441.pdf"
         location-type: directory
@@ -282,7 +282,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: IRS2441_DUE_DILIGENCE_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: pdf/2024/IRS2441_DUE_DILIGENCE_STATEMENT/en/irs2441_due_diligence_statement.pdf
         location-type: classpath
@@ -290,7 +290,7 @@ direct-file:
         configuration-location-type: classpath
         cache-in-memory: true
       - name: DF1099R
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/DF1099R/en/DF1099Ren.pdf"
         location-type: directory
@@ -298,7 +298,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: DF1099R
-        year: 2024
+        year: 2025
         language-code: es
         location: "src/main/resources/pdf/2024/DF1099R/es/DF1099Res.pdf"
         location-type: directory
@@ -306,7 +306,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: CDCC_QUALIFYING_PERSON_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/CDCC_QUALIFYING_PERSON_STATEMENT/en/irs2441_qualifying_persons_statement.pdf"
         location-type: directory
@@ -314,7 +314,7 @@ direct-file:
         configuration-location-type: directory
         cache-in-memory: true
       - name: CDCC_CAREGIVERS_STATEMENT
-        year: 2024
+        year: 2025
         language-code: en
         location: "src/main/resources/pdf/2024/CDCC_CAREGIVERS_STATEMENT/en/2441_Additional-Care-Providers.pdf"
         location-type: directory

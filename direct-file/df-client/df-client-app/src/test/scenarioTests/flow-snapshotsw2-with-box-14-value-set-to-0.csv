@@ -234,23 +234,16 @@ Subcategory: /flow/you-and-your-family/dependents
 /flow/you-and-your-family/dependents/add-person-basic-info?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-relationship-category?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-relationship-type-sibling?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/add-person-student?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-disability?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-self-care?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-lived-with-you?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/add-person-lived-with-you-in-us?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-tin?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-acknowledge-tin?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/add-person-qc-support?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
+/flow/you-and-your-family/dependents/add-person-qr-support?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
+/flow/you-and-your-family/dependents/add-person-qr-gross-income?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-married?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-us-citizen?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/add-person-resident-alien?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/add-person-qc-of-another?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/qualified-dependent?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/qualified-dependent-choice?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/qualified-dependent-tin-input?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/qualified-dependent-ip-pin-choice?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
-/flow/you-and-your-family/dependents/qualified-dependent-confirmation?%2FfamilyAndHousehold=7e2fe8ae-17cb-4190-bffb-a35dfbc14fc3
 /flow/you-and-your-family/dependents/family-hh-intro-non-dep-tps?%2FfamilyAndHousehold=5238c9fb-1887-41f5-bae6-7d9305de6ef7
 /flow/you-and-your-family/dependents/family-hh-intro-2?%2FfamilyAndHousehold=5238c9fb-1887-41f5-bae6-7d9305de6ef7
 /flow/you-and-your-family/dependents/add-person?%2FfamilyAndHousehold=5238c9fb-1887-41f5-bae6-7d9305de6ef7
@@ -367,12 +360,10 @@ Subcategory: /flow/credits-and-deductions/credits
 /flow/credits-and-deductions/credits/ctc-intro
 /flow/credits-and-deductions/credits/ctc-improper-claims
 /flow/credits-and-deductions/credits/ctc-qualified
-/flow/credits-and-deductions/credits/odc-qualified
 /flow/credits-and-deductions/credits/eitc-breather
 /flow/credits-and-deductions/credits/eitc-taxpayer-qc-of-another
 /flow/credits-and-deductions/credits/eitc-improper-claims
 /flow/credits-and-deductions/credits/eitc-qualified
-/flow/credits-and-deductions/credits/credit-summary-qualified
 Category: /flow/your-taxes
 Subcategory: /flow/your-taxes/estimated-taxes-paid
 /flow/your-taxes/estimated-taxes-paid/est-tax-payments-intro
@@ -381,11 +372,6 @@ Subcategory: /flow/your-taxes/amount
 /flow/your-taxes/amount/tax-amount-intro
 /flow/your-taxes/amount/tax-amount-number
 /flow/your-taxes/amount/tax-amount-explanation
-Subcategory: /flow/your-taxes/payment-method
-/flow/your-taxes/payment-method/refund-intro
-/flow/your-taxes/payment-method/refund-method-choice
-/flow/your-taxes/payment-method/refund-mailing-address
-/flow/your-taxes/payment-method/refund-outro
 Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/other-preferences-intro
 /flow/your-taxes/other-preferences/third-party-designee-choice

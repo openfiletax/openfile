@@ -27,10 +27,18 @@ const made83kIncomeData = {
   ...baseIncomeData,
   [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`83000.00`),
 };
+const made88kIncomeData = {
+  ...baseIncomeData,
+  [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`88000.00`),
+};
 
 const made168kIncomeData = {
   ...baseIncomeData,
   [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`168000.00`),
+};
+const made173kIncomeData = {
+  ...baseIncomeData,
+  [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`173000.00`),
 };
 
 const made190kIncomeData = {
@@ -41,6 +49,10 @@ const made190kIncomeData = {
 const made200kIncomeData = {
   ...baseIncomeData,
   [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`200000.00`),
+};
+const made210kIncomeData = {
+  ...baseIncomeData,
+  [`/formW2s/#${w2Id}/writableWages`]: createDollarWrapper(`210000.00`),
 };
 
 const studentLoanEligibleData = {
@@ -81,13 +93,13 @@ describe(`student loan deduction related facts`, () => {
       const { factGraph } = setupFactGraph({
         ...mfjFilerData,
         ...studentLoanEligibleData,
-        ...made168kIncomeData,
+        ...made173kIncomeData,
         [`/studentLoanInterestAmount`]: createDollarWrapper(`500.00`),
       });
 
-      // The /studentLoanPhaseOutStartMfj is $165,000 and /studentLoanPhaseOutCompleteMfj is $195,000.
-      // The filer’s income of $168,000 is $3,000 above the $165,000 threshold.
-      // The /studentLoanPhaseOutRange is $195,000 - $165,000 = $30,000.
+      // The /studentLoanPhaseOutStartMfj is $170,000 and /studentLoanPhaseOutCompleteMfj is $200,000.
+      // The filer’s income of $173,000 is $3,000 above the $170,000 threshold.
+      // The /studentLoanPhaseOutRange is $200,000 - $170,000 = $30,000.
       // Their /studentLoanInterestAmount is $500.00
       // $3000 / $30,000 * 500 = 50 is phased out
       // 500 - 50 = 450
@@ -150,18 +162,18 @@ describe(`student loan deduction related facts`, () => {
       // 3. lines 11 through 20, and 23 and 25 = /adjustmentsToIncomeExcludingStudentLoanInterest = $6000
       // due to HSA contributions
       // 4. /magiForStudentLoanInterestDeduction = $184,000
-      // 5. /studentLoanPhaseOutStartMfj = $165,000 (worksheet hasn't updated for 2024 yet and has this as $155,000)
-      // 6. is 4 more than 5? Yes =  $184,000 - $165,000 = $19,000
-      // 7. $19,000 / 30,000 = 0.633
-      // 8. 0.633 * $2500 = $1582.5
-      // 9. $2500 - $1582.5 = $917.5 (rounded to $918)
+      // 5. /studentLoanPhaseOutStartMfj = $170,000
+      // 6. is 4 more than 5? Yes =  $184,000 - $170,000 = $14,000
+      // 7. $14,000 / 30,000 = 0.4666...
+      // 8. 0.4666... * $2500 = $1166.67
+      // 9. $2500 - $1166.67 = $1333.33 (rounded to $1333)
 
       expect(factGraph.get(Path.concretePath(`/hsaTotalDeductibleAmount`, null)).get.toString()).toBe(`6000.00`);
       expect(
         factGraph.get(Path.concretePath(`/adjustmentsToIncomeExcludingStudentLoanInterest`, null)).get.toString()
       ).toBe(`6000.00`);
       expect(factGraph.get(Path.concretePath(`/studentLoanInterestAdjustmentAmount`, null)).get.toString()).toBe(
-        `918.00`
+        `1333.00`
       );
     });
 
@@ -170,7 +182,9 @@ describe(`student loan deduction related facts`, () => {
 
       const { factGraph } = setupFactGraph({
         ...mfjFilerData,
-        ...made200kIncomeData,
+        ...made210kIncomeData,
+        ...studentLoanEligibleData,
+        [`/studentLoanInterestAmount`]: createDollarWrapper(`500.00`),
       });
       expect(factGraph.get(Path.concretePath(`/cannotDeductStudentLoanInterest`, null)).get).toBe(true);
     });
@@ -195,12 +209,10 @@ describe(`student loan deduction related facts`, () => {
       const { factGraph } = setupFactGraph({
         ...singleFilerData,
         ...studentLoanEligibleData,
-        ...made83kIncomeData,
+        ...made88kIncomeData,
         [`/studentLoanInterestAmount`]: createDollarWrapper(`500.00`),
       });
       expect(factGraph.get(Path.concretePath(`/studentLoanInterestAdjustmentAmount`, null)).get.toString()).toBe(
-        // This number has been verified against manually doing the work on form 1040 instructions.
-        // But it will change when we update for TY2023!
         `400.00`
       );
     });

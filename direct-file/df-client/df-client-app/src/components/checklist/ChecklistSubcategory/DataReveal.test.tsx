@@ -60,7 +60,7 @@ describe(`DataReveal`, () => {
     '/flow/income/dependent-care': [`None reported`],
     '/flow/income/hsa': [`None reported`],
     '/flow/credits-and-deductions/deductions': [`Standard deduction: $`, `Adjustment: $`],
-    '/flow/credits-and-deductions/credits': [`Refundable credits: $`, `Nonrefundable credits: $`],
+    '/flow/credits-and-deductions/credits': [`Refundable credits: $`],
     '/flow/your-taxes/estimated-taxes-paid': [`None reported`],
     '/flow/your-taxes/amount': [`Your refund: $`],
     '/flow/your-taxes/payment-method': [`Direct deposit refund`, `******1212`],

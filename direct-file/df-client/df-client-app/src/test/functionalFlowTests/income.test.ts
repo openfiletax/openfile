@@ -496,7 +496,7 @@ describe(`The \`income\` subcategory`, () => {
           },
         });
         expect(givenFacts(factGraph).atPath(`${path}/w2-add-boxes-1-8`, w2Id, task)).toRouteNextTo(
-          `${path}/social-security-wages-limit-ko`
+          `${path}/w2-add-boxes-10-11`
         );
       });
     });

@@ -103,7 +103,7 @@
     <Fact path="/maxIndividualEducatorExpensesLimit">
       <Name>Maximum Deduction for educator expenses</Name>
       <Description>The maximum deduction an individual can take for educator expense</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>300</Dollar>
@@ -113,7 +113,7 @@
     <Fact path="/primaryEducatorExpensesWritable">
       <Name>Primary educator expenses writable</Name>
       <Description>Expenses the TP spent as a k12 educator. May deduct up to the maxIndividualEducatorExpensesLimit.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Writable>
         <Dollar />
@@ -159,7 +159,7 @@
     <Fact path="/secondaryEducatorExpensesWritable">
       <Name>Secondary educator expenses writable</Name>
       <Description>Expenses the TP spent as a k12 educator. May deduct up to the maxIndividualEducatorExpensesLimit.</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Writable>
         <Dollar />

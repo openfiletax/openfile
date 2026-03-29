@@ -950,7 +950,7 @@ export const filerWithW2NoDeductionsNoCreditsBaseData = {
 export const filerWithZeroBalanceData = {
   ...filerWithW2NoDeductionsNoCreditsBaseData,
   [`/formW2s/#${uuid}/writableWages`]: createDollarWrapper(`200000`),
-  [`/formW2s/#${uuid}/writableFederalWithholding`]: createDollarWrapper(`37539`),
+  [`/formW2s/#${uuid}/writableFederalWithholding`]: createDollarWrapper(`37247`),
 };
 
 export const filerWithRefundDueData = {

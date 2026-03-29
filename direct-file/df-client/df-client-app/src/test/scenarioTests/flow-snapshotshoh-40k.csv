@@ -160,9 +160,7 @@ Subcategory: /flow/credits-and-deductions/credits
 /flow/credits-and-deductions/credits/marketplace-breather
 /flow/credits-and-deductions/credits/qualified-marketplace-plan
 /flow/credits-and-deductions/credits/ptc-not-qualified-no-aptc
-/flow/credits-and-deductions/credits/ctc-intro
-/flow/credits-and-deductions/credits/ctc-improper-claims
-/flow/credits-and-deductions/credits/ctc-qualified
+/flow/credits-and-deductions/credits/odc-improper-claims
 /flow/credits-and-deductions/credits/odc-qualified
 /flow/credits-and-deductions/credits/eitc-breather
 /flow/credits-and-deductions/credits/eitc-taxpayer-qc-of-another
@@ -187,6 +185,7 @@ Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/third-party-designee-choice
 /flow/your-taxes/other-preferences/comms-different-language-choice
 /flow/your-taxes/other-preferences/comms-different-format-choice
+/flow/your-taxes/other-preferences/presidential-fund
 Category: /flow/complete
 Subcategory: /flow/complete/review
 /flow/complete/review/review

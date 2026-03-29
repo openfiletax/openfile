@@ -42,20 +42,14 @@ Subcategory: /flow/you-and-your-family/dependents
 /flow/you-and-your-family/dependents/add-person-basic-info?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-relationship-category?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-relationship-type-child?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
+/flow/you-and-your-family/dependents/add-person-student?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
+/flow/you-and-your-family/dependents/add-person-disability?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-self-care?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-lived-with-you?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/add-person-another-parent-in-picture?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/add-person-lived-with-you-in-us?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-tin?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/add-person-ssn-valid-for-work?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-acknowledge-tin?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/add-person-qc-support?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-married?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 /flow/you-and-your-family/dependents/add-person-us-citizen?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/add-person-qc-of-another?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/qualified-dependent-tin-input?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/qualified-dependent-ip-pin-choice?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
-/flow/you-and-your-family/dependents/qualified-dependent-confirmation?%2FfamilyAndHousehold=79ac153b-58be-4d5e-a59f-276ef540318e
 Subcategory: /flow/you-and-your-family/filing-status
 /flow/you-and-your-family/filing-status/filing-status-override
 Category: /flow/income
@@ -192,13 +186,6 @@ Subcategory: /flow/credits-and-deductions/credits
 /flow/credits-and-deductions/credits/marketplace-breather
 /flow/credits-and-deductions/credits/qualified-marketplace-plan
 /flow/credits-and-deductions/credits/ptc-not-qualified-no-aptc
-/flow/credits-and-deductions/credits/odc-improper-claims
-/flow/credits-and-deductions/credits/odc-qualified
-/flow/credits-and-deductions/credits/eitc-breather
-/flow/credits-and-deductions/credits/eitc-taxpayer-qc-of-another
-/flow/credits-and-deductions/credits/eitc-improper-claims
-/flow/credits-and-deductions/credits/eitc-qualified
-/flow/credits-and-deductions/credits/credit-summary-qualified
 Category: /flow/your-taxes
 Subcategory: /flow/your-taxes/estimated-taxes-paid
 /flow/your-taxes/estimated-taxes-paid/est-tax-payments-intro
@@ -210,17 +197,11 @@ Subcategory: /flow/your-taxes/amount
 /flow/your-taxes/amount/tax-amount-intro
 /flow/your-taxes/amount/tax-amount-number
 /flow/your-taxes/amount/tax-amount-explanation
-Subcategory: /flow/your-taxes/payment-method
-/flow/your-taxes/payment-method/refund-intro
-/flow/your-taxes/payment-method/refund-method-choice
-/flow/your-taxes/payment-method/refund-mailing-address
-/flow/your-taxes/payment-method/refund-outro
 Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/other-preferences-intro
 /flow/your-taxes/other-preferences/third-party-designee-choice
 /flow/your-taxes/other-preferences/comms-different-language-choice
 /flow/your-taxes/other-preferences/comms-different-format-choice
-/flow/your-taxes/other-preferences/presidential-fund
 Category: /flow/complete
 Subcategory: /flow/complete/review
 /flow/complete/review/review

@@ -147,9 +147,9 @@ describe(`Premium tax credit`, () => {
         ...ptcSingleFiler,
         ...makeW2Data(6998),
       });
-      expect(factGraph.get(Path.concretePath(`/federalPovertyLevelThreshold`, null)).get.toString()).toBe(`14580.00`);
-      // calculates 6998 * 100 / 14580 = 47.99725652 which should be truncated to give 47, but used to be 48
-      expect(factGraph.get(Path.concretePath(`/householdIncomeAsPercent`, null)).get).toBe(47);
+      expect(factGraph.get(Path.concretePath(`/federalPovertyLevelThreshold`, null)).get.toString()).toBe(`15060.00`);
+      // calculates 6998 * 100 / 15060 = 46.46746348 which should be truncated to give 46
+      expect(factGraph.get(Path.concretePath(`/householdIncomeAsPercent`, null)).get).toBe(46);
     });
   });
 
@@ -163,9 +163,9 @@ describe(`Premium tax credit`, () => {
         ...ptcSingleFiler,
         ...makeW2Data(38337),
       });
-      expect(factGraph.get(Path.concretePath(`/formattedApplicableFigure`, null)).get).toBe(`0.0448`);
-      // calculates Round(38337 * 0.0448) = Round(1717.4976). This used to round to 1718 but it should round down
-      expect(factGraph.get(Path.concretePath(`/ptcAnnualContributionAmount`, null)).get.toString()).toBe(`1717.00`);
+      expect(factGraph.get(Path.concretePath(`/formattedApplicableFigure`, null)).get).toBe(`0.0416`);
+      // calculates Round(38337 * 0.0416) = Round(1594.8192)
+      expect(factGraph.get(Path.concretePath(`/ptcAnnualContributionAmount`, null)).get.toString()).toBe(`1595.00`);
     });
   });
 });

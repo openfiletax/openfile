@@ -252,7 +252,7 @@ describe(`HSA Contributions and Coverage`, () => {
         });
 
         const line3 = factGraph.get(Path.concretePath(`/primaryFiler/hsaInitialContributionLimit`, null));
-        expect(line3.get.toString()).toBe(`9300.00`);
+        expect(line3.get.toString()).toBe(`9550.00`);
 
         const line7 = factGraph.get(Path.concretePath(`/primaryFiler/additionToHsaContributionLimit`, null));
         expect(line7.get.toString()).toBe(`0.00`);
@@ -397,7 +397,7 @@ describe(`HSA Contributions and Coverage`, () => {
         });
 
         const line3 = factGraph.get(Path.concretePath(`/primaryFiler/hsaInitialContributionLimit`, null));
-        expect(line3.get.toString()).toBe(`5150.00`);
+        expect(line3.get.toString()).toBe(`5300.00`);
 
         const line7 = factGraph.get(Path.concretePath(`/primaryFiler/additionToHsaContributionLimit`, null));
         expect(line7.get.toString()).toBe(`0.00`);
@@ -412,7 +412,7 @@ describe(`HSA Contributions and Coverage`, () => {
         });
 
         const line3 = factGraph.get(Path.concretePath(`/primaryFiler/hsaInitialContributionLimit`, null));
-        expect(line3.get.toString()).toBe(`8300.00`);
+        expect(line3.get.toString()).toBe(`8550.00`);
 
         const line7 = factGraph.get(Path.concretePath(`/primaryFiler/additionToHsaContributionLimit`, null));
         expect(line7.get.toString()).toBe(`1000.00`);
@@ -519,18 +519,18 @@ describe(`HSA Contributions and Coverage`, () => {
           spouseHdHpCoverageType: `family`,
           filerW2Contributions: `4200.00`,
           spouseW2Contributions: `4200.00`,
-          expectedFilerLine5Limit: `8300.00`,
-          expectedSpouseLine5Limit: `8300.00`,
+          expectedFilerLine5Limit: `8550.00`,
+          expectedSpouseLine5Limit: `8550.00`,
           expectedFilerLine6: `4200.00`,
-          expectedSpouseLine6: `4100.00`,
+          expectedSpouseLine6: `4350.00`,
           expectedFilerLine7: `0.00`,
           expectedSpouseLine7: `1000.00`,
           expectedFilerLine8TotalContributionLimit: `4200.00`,
-          expectedSpouseLine8TotalContributionLimit: `5100.00`,
+          expectedSpouseLine8TotalContributionLimit: `5350.00`,
           expectedFilerLine11Contribution: `4200.00`,
           expectedSpouseLine11Contribution: `4200.00`,
           expectedFilerLine12: `0.00`,
-          expectedSpouseLine12: `900.00`,
+          expectedSpouseLine12: `1150.00`,
         },
         {
           description: `Filer over 55, spouse under 55`,
@@ -540,18 +540,18 @@ describe(`HSA Contributions and Coverage`, () => {
           spouseHdHpCoverageType: `family`,
           filerW2Contributions: `4200.00`,
           spouseW2Contributions: `4200.00`,
-          expectedFilerLine5Limit: `8300.00`,
-          expectedSpouseLine5Limit: `8300.00`,
+          expectedFilerLine5Limit: `8550.00`,
+          expectedSpouseLine5Limit: `8550.00`,
           expectedFilerLine6: `3200.00`,
-          expectedSpouseLine6: `5100.00`,
+          expectedSpouseLine6: `5350.00`,
           expectedFilerLine7: `1000.00`,
           expectedSpouseLine7: `0.00`,
           expectedFilerLine8TotalContributionLimit: `4200.00`,
-          expectedSpouseLine8TotalContributionLimit: `5100.00`,
+          expectedSpouseLine8TotalContributionLimit: `5350.00`,
           expectedFilerLine11Contribution: `4200.00`,
           expectedSpouseLine11Contribution: `4200.00`,
           expectedFilerLine12: `0.00`,
-          expectedSpouseLine12: `900.00`,
+          expectedSpouseLine12: `1150.00`,
         },
         {
           description: `Filer over limit, over 55`,
@@ -561,13 +561,13 @@ describe(`HSA Contributions and Coverage`, () => {
           spouseHdHpCoverageType: `family`,
           filerW2Contributions: `10000.00`,
           spouseW2Contributions: `50.00`,
-          expectedFilerLine5Limit: `8300.00`,
-          expectedSpouseLine5Limit: `8300.00`,
-          expectedFilerLine6: `8300.00`,
+          expectedFilerLine5Limit: `8550.00`,
+          expectedSpouseLine5Limit: `8550.00`,
+          expectedFilerLine6: `8550.00`,
           expectedSpouseLine6: `0.00`,
           expectedFilerLine7: `1000.00`,
           expectedSpouseLine7: `0.00`,
-          expectedFilerLine8TotalContributionLimit: `9300.00`,
+          expectedFilerLine8TotalContributionLimit: `9550.00`,
           expectedSpouseLine8TotalContributionLimit: `0.00`,
           expectedFilerLine11Contribution: `10000.00`,
           expectedSpouseLine11Contribution: `50.00`,
@@ -582,18 +582,18 @@ describe(`HSA Contributions and Coverage`, () => {
           spouseHdHpCoverageType: `family`,
           filerW2Contributions: `8500.00`,
           spouseW2Contributions: `800.00`,
-          expectedFilerLine5Limit: `8300.00`,
-          expectedSpouseLine5Limit: `8300.00`,
-          expectedFilerLine6: `8300.00`,
-          expectedSpouseLine6: `0.00`,
+          expectedFilerLine5Limit: `8550.00`,
+          expectedSpouseLine5Limit: `8550.00`,
+          expectedFilerLine6: `8500.00`,
+          expectedSpouseLine6: `50.00`,
           expectedFilerLine7: `0.00`,
           expectedSpouseLine7: `1000.00`,
-          expectedFilerLine8TotalContributionLimit: `8300.00`,
-          expectedSpouseLine8TotalContributionLimit: `1000.00`,
+          expectedFilerLine8TotalContributionLimit: `8500.00`,
+          expectedSpouseLine8TotalContributionLimit: `1050.00`,
           expectedFilerLine11Contribution: `8500.00`,
           expectedSpouseLine11Contribution: `800.00`,
           expectedFilerLine12: `0.00`,
-          expectedSpouseLine12: `200.00`,
+          expectedSpouseLine12: `250.00`,
         },
         {
           description: `Filer over 55, under additional limit`,
@@ -603,18 +603,18 @@ describe(`HSA Contributions and Coverage`, () => {
           spouseHdHpCoverageType: `family`,
           filerW2Contributions: `500.00`,
           spouseW2Contributions: `2000.00`,
-          expectedFilerLine5Limit: `8300.00`,
-          expectedSpouseLine5Limit: `8300.00`,
+          expectedFilerLine5Limit: `8550.00`,
+          expectedSpouseLine5Limit: `8550.00`,
           expectedFilerLine6: `0.00`,
-          expectedSpouseLine6: `8300.00`,
+          expectedSpouseLine6: `8550.00`,
           expectedFilerLine7: `1000.00`,
           expectedSpouseLine7: `0.00`,
           expectedFilerLine8TotalContributionLimit: `1000.00`,
-          expectedSpouseLine8TotalContributionLimit: `8300.00`,
+          expectedSpouseLine8TotalContributionLimit: `8550.00`,
           expectedFilerLine11Contribution: `500.00`,
           expectedSpouseLine11Contribution: `2000.00`,
           expectedFilerLine12: `500.00`,
-          expectedSpouseLine12: `6300.00`,
+          expectedSpouseLine12: `6550.00`,
         },
       ];
 

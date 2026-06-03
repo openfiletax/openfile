@@ -125,20 +125,20 @@
     <Fact path="/maxIncomeForNonMFJStudentLoanInterestDeduction">
       <Name>Max income for a non-MFJ filer student loan interest deduction</Name>
       <Description>The maximum magi that a non-MFJ filer can have and still receive the Student Loan Interest Deduction</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>95000</Dollar>
+        <Dollar>100000</Dollar>
       </Derived>
     </Fact>
 
     <Fact path="/maxIncomeForMFJStudentLoanInterestDeduction">
       <Name>Max income for an MFJ filer student loan interest deduction</Name>
       <Description>The maximum magi that an MFJ filer can have and still receive the Student Loan Interest Deduction</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>195000</Dollar>
+        <Dollar>200000</Dollar>
       </Derived>
     </Fact>
 
@@ -186,7 +186,7 @@
     <Fact path="/maxStudentLoadDeduction">
       <Name>Maximum student loan deduction</Name>
       <Description>The maximum amount one is allowed to deduct because of student loan interest payments</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <Dollar>2500</Dollar>
@@ -261,10 +261,10 @@
         Rev
         Proc 30 Interest on Education Loans §221(b)(2)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>80000</Dollar>
+        <Dollar>85000</Dollar>
       </Derived>
     </Fact>
 
@@ -274,10 +274,10 @@
         Rev Proc
         .30 Interest on Education Loans §221(b)(2)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>165000</Dollar>
+        <Dollar>170000</Dollar>
       </Derived>
     </Fact>
 
@@ -287,10 +287,10 @@
         Rev Proc .30
         Interest on Education Loans §221(b)(2)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>95000</Dollar>
+        <Dollar>100000</Dollar>
       </Derived>
     </Fact>
 
@@ -300,10 +300,10 @@
         Rev Proc .30
         Interest on Education Loans §221(b)(2)(B)
       </Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
-        <Dollar>195000</Dollar>
+        <Dollar>200000</Dollar>
       </Derived>
     </Fact>
 
@@ -345,7 +345,7 @@
       <Name>Student Loan Amount Phase Out Multiplier</Name>
       <Description>Phaseout amount for the student loan deduction. Described in instructions for 1040, schedule 1, line
         21. Corresponds with Line 8 of the Student Loan Interest Deduction Worksheet. Returns 0 if there is no phaseout</Description>
-      <TaxYear>2024</TaxYear>
+      <TaxYear>2025</TaxYear>
 
       <Derived>
         <!-- We are required to round our multiplier to three decimals. To do this while

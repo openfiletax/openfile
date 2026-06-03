@@ -55,13 +55,13 @@ describe(`CTC and ODC amounts`, () => {
         ...child2Data,
         ...child3Data,
       },
-      // /tentativeTaxFromTaxableIncome is 3860 from the tax tables, this caps this credit
+      // /tentativeTaxFromTaxableIncome is 3779 from the tax tables, this caps this credit
       // For the 2 QC under 17, we get 2000 * 2 = 4000
       // For the 1 QC over 17, we get 500, for a total potential creditof 4500
-      // We are capped to the 3860, from which we take 500 for ODC, leaving 3509 for CTC
+      // We are capped to 3779, from which we take 500 for ODC, leaving 3279 for CTC
       odcAmount: `500.00`,
-      ctcAmount: `3360.00`,
-      total: `3860.00`,
+      ctcAmount: `3279.00`,
+      total: `3779.00`,
     },
     {
       name: `HOH filer with 3 QC (2 under 17 and one older) and partial phase out in wages`,

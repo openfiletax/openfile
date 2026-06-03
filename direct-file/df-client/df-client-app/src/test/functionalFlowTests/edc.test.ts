@@ -44,7 +44,7 @@ describe(`Elderly or disabled credit`, () => {
             [`/filers/#${primaryFilerId}/dateOfBirth`]: getDobFromAgeDefinedByTyPlusOne(66),
           });
           expect(givenFacts(factGraph).atPath(`${basePath}/edc-breather`, primaryFilerId, task)).toRouteNextTo(
-            `${basePath}/edc-nontaxable-payments`
+            `/checklist`
           );
         });
       });

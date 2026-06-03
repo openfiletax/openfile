@@ -30,7 +30,7 @@ describe(`Other preferences is always completed...`, () => {
   it(`When the TP owes a massive amount of tax and will be able to make a presidential election designation`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00` },
+      expectedStartingFactState: { '/totalTax': `37247.00` },
       startingFactState: {
         ...input.startingFactState,
         [`/formW2s/#${uuid}/writableWages`]: createDollarWrapper(`200000`),
@@ -61,21 +61,21 @@ describe(`Payment method is always completed...`, () => {
   it(`When the TP owes tax`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/owesBalance': `true` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/owesBalance': `true` },
       startingFactState: filerWithPaymentDueData,
     });
   });
   it(`When the TP is owed a refund`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/dueRefund': `true` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/dueRefund': `true` },
       startingFactState: filerWithRefundDueData,
     });
   });
   it(`When the TP has zero balance`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/zeroBalance': `true` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/zeroBalance': `true` },
       startingFactState: filerWithZeroBalanceData,
     });
   });
@@ -93,28 +93,28 @@ describe(`Refund Disbursement Code is always set...`, () => {
   it(`When the TP owes tax`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/owesBalance': `true`, '/xmlRefundDisbursementCd': `0` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/owesBalance': `true`, '/xmlRefundDisbursementCd': `0` },
       startingFactState: filerWithPaymentDueData,
     });
   });
   it(`When the TP has zero balance`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/zeroBalance': `true`, '/xmlRefundDisbursementCd': `0` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/zeroBalance': `true`, '/xmlRefundDisbursementCd': `0` },
       startingFactState: filerWithZeroBalanceData,
     });
   });
   it(`When the TP is owed a refund and wants to receive direct deposit`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/dueRefund': `true`, '/xmlRefundDisbursementCd': `2` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/dueRefund': `true`, '/xmlRefundDisbursementCd': `2` },
       startingFactState: filerWithRefundDueDataWhoWantsToReceiveDirectDeposit,
     });
   });
   it(`When the TP is owed a refund and does not want to receive direct deposit`, () => {
     checkFlowSetsFacts({
       ...input,
-      expectedStartingFactState: { '/totalTax': `37539.00`, '/dueRefund': `true`, '/xmlRefundDisbursementCd': `3` },
+      expectedStartingFactState: { '/totalTax': `37247.00`, '/dueRefund': `true`, '/xmlRefundDisbursementCd': `3` },
       startingFactState: filerWithRefundDueDataWhoDoesNotWantToReceiveDirectDeposit,
     });
   });

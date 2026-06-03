@@ -95,7 +95,7 @@ Subcategory: /flow/credits-and-deductions/deductions
 /flow/credits-and-deductions/deductions/deductions-intro
 /flow/credits-and-deductions/deductions/hsa-deduction-intro-not-qualified
 /flow/credits-and-deductions/deductions/eligible-educator
-/flow/credits-and-deductions/deductions/student-loan-interest-not-qualified
+/flow/credits-and-deductions/deductions/paid-student-loan-interest
 /flow/credits-and-deductions/deductions/standard-deduction-intro
 /flow/credits-and-deductions/deductions/taxable-income-summary
 Subcategory: /flow/credits-and-deductions/credits
@@ -104,15 +104,11 @@ Subcategory: /flow/credits-and-deductions/credits
 /flow/credits-and-deductions/credits/marketplace-breather
 /flow/credits-and-deductions/credits/qualified-marketplace-plan
 /flow/credits-and-deductions/credits/ptc-not-qualified-no-aptc
-/flow/credits-and-deductions/credits/cdcc-intro
-/flow/credits-and-deductions/credits/cdcc-gating
-/flow/credits-and-deductions/credits/cdcc-not-qualified
 /flow/credits-and-deductions/credits/ctc-intro
 /flow/credits-and-deductions/credits/ctc-improper-claims
 /flow/credits-and-deductions/credits/ctc-improper-claims-taken-again-since-disallowal
 /flow/credits-and-deductions/credits/ctc-improper-claims-notice
 /flow/credits-and-deductions/credits/ctc-qualified
-/flow/credits-and-deductions/credits/credit-summary-qualified
 Category: /flow/your-taxes
 Subcategory: /flow/your-taxes/estimated-taxes-paid
 /flow/your-taxes/estimated-taxes-paid/est-tax-payments-intro
@@ -121,17 +117,11 @@ Subcategory: /flow/your-taxes/amount
 /flow/your-taxes/amount/tax-amount-intro
 /flow/your-taxes/amount/tax-amount-number
 /flow/your-taxes/amount/tax-amount-explanation
-Subcategory: /flow/your-taxes/payment-method
-/flow/your-taxes/payment-method/payment-intro
-/flow/your-taxes/payment-method/payment-method-choice
-/flow/your-taxes/payment-method/payment-another-way
-/flow/your-taxes/payment-method/payment-outro
 Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/other-preferences-intro
 /flow/your-taxes/other-preferences/third-party-designee-choice
 /flow/your-taxes/other-preferences/comms-different-language-choice
 /flow/your-taxes/other-preferences/comms-different-format-choice
-/flow/your-taxes/other-preferences/presidential-fund
 Category: /flow/complete
 Subcategory: /flow/complete/review
 /flow/complete/review/review

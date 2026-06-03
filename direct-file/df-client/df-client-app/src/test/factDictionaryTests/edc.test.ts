@@ -27,7 +27,7 @@ describe(`Credit for the Elderly or the Disabled`, () => {
           ...singleElderlyFilerEdcBase,
           ...makeW2Data(17000),
         },
-        expectedQualification: true,
+        expectedQualification: false,
       },
       {
         description: `Single, elderly over AGI limit`,

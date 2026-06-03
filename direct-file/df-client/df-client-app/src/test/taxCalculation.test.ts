@@ -67,7 +67,7 @@ describe(`Tax computation`, () => {
   // at https://www.nerdwallet.com/taxes/tax-calculator
 
   for (const scenario of [
-    // Not over $11,600: 10% of the taxable income
+    // Not over $11,925: 10% of the taxable income
     { wages: 0, rounded: 0, tax: 0 },
     { wages: 4.49, rounded: 2.5, tax: 0 },
 
@@ -89,36 +89,36 @@ describe(`Tax computation`, () => {
     { wages: 3025.0, rounded: 3025.0, tax: 303.0 },
     { wages: 3049.49, rounded: 3025.0, tax: 303.0 },
 
-    // Over $11,600 but not over $47,150
+    // Over $11,925 but not over $48,475
 
     // Some 3rd party tools are incorrectly calculating this as `2180`
     // because they are not properly applying rounding.
-    { wages: 20000.0, rounded: 20025.0, tax: 2171.0 },
+    { wages: 20000.0, rounded: 20025.0, tax: 2132.0 },
 
-    // Over $47,150 but not over $100,525
+    // Over $48,475 but not over $103,350
 
-    { wages: 57050.0, rounded: 57075.0, tax: 7610.0 },
-    { wages: 57075.0, rounded: 57075.0, tax: 7610.0 },
-    { wages: 57099.49, rounded: 57075.0, tax: 7610.0 },
+    { wages: 57050.0, rounded: 57075.0, tax: 7471.0 },
+    { wages: 57075.0, rounded: 57075.0, tax: 7471.0 },
+    { wages: 57099.49, rounded: 57075.0, tax: 7471.0 },
 
-    // Over $100,525 but not over $191,950
-    { wages: 100950.0, rounded: 100950.0, tax: 17271 },
+    // Over $48,475 but not over $103,350
+    { wages: 100950.0, rounded: 100950.0, tax: 17123 },
 
-    // Over $191,950 but not over $243,725
-    { wages: 200000.0, rounded: 200000.0, tax: 41687.0 },
+    // Over $197,300 but not over $250,525
+    { wages: 200000.0, rounded: 200000.0, tax: 41063.0 },
 
-    // Over $243,725 but not over $609,350
+    // Over $197,300 but not over $250,525
     // Some 3rd party tools are calculating this as `59394`
     // because they are rounding differently than we are. We should verify
     // that we are rounding correctly against MeF or another tool.
-    { wages: 250000.0, rounded: 250000.0, tax: 57875.0 },
+    { wages: 250000.0, rounded: 250000.0, tax: 57063.0 },
 
-    // Over $609,350
-    { wages: 700000.0, rounded: 700000.0, tax: 217188.0 },
+    // Over $626,350
+    { wages: 700000.0, rounded: 700000.0, tax: 216020.0 },
   ]) {
     it(`rounds wages of $${scenario.wages} to $${scenario.rounded} for tentative tax $${scenario.tax}`, () => {
-      // This is the standard deduction for 2024
-      const standardDeduction = 14600.0;
+      // This is the standard deduction for 2025
+      const standardDeduction = 15000.0;
       const facts = {
         ...baseFacts,
         [`/formW2s/#${w2Id}/writableWages`]: {

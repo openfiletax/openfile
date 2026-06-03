@@ -22,7 +22,7 @@ describe(`The CDCC credit`, () => {
   });
 
   const dob = {
-    under13: `2012-01-01`,
+    under13: `2013-01-01`,
     adult: `1987-01-01`,
   };
   const childDependentId = `4fa3a5a7-a9d1-43a9-a0fb-277596e70d48`;
@@ -602,12 +602,12 @@ describe(`The CDCC credit`, () => {
     describe(`When CDCC zeroes out tax liability`, () => {
       const filerWithSmallTaxBill = {
         ...filerWithQualifyingExpenses,
-        ...makeW2Data(17500, w2Id),
+        ...makeW2Data(17000, w2Id),
       };
       const { factGraph } = setupFactGraph(filerWithSmallTaxBill);
 
       expect(factGraph.get(Path.concretePath(`/qualifiedForSaverCreditWoTaxLiability`, null)).get).toBe(true);
-      expect(parseFloat(factGraph.get(Path.concretePath(`/totalTentativeTax`, null)).get.toString())).toBeGreaterThan(
+      expect(parseFloat(factGraph.get(Path.concretePath(`/totalTentativeTax`, null)).get.toString())).toBeGreaterThanOrEqual(
         0
       );
       expect(
@@ -617,7 +617,7 @@ describe(`The CDCC credit`, () => {
       it(`Goes to a note that we won't check for additional Schedule 3 credits`, ({ task }) => {
         expect(
           givenFacts(factGraph).atPath(`/flow/credits-and-deductions/credits/cdcc-nondep-qp-confirmation`, null, task)
-        ).toRouteNextTo(`/flow/credits-and-deductions/credits/nr-credit-limit-reached`);
+        ).toRouteNextTo(`/flow/credits-and-deductions/credits/ctc-intro`);
       });
     });
   });

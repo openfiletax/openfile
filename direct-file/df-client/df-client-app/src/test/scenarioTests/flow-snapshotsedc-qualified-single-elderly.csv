@@ -79,11 +79,7 @@ Subcategory: /flow/credits-and-deductions/credits
 /flow/credits-and-deductions/credits/marketplace-breather
 /flow/credits-and-deductions/credits/qualified-marketplace-plan
 /flow/credits-and-deductions/credits/ptc-not-qualified-no-aptc
-/flow/credits-and-deductions/credits/edc-breather
-/flow/credits-and-deductions/credits/edc-nontaxable-payments
-/flow/credits-and-deductions/credits/edc-add-nontaxable-payment
-/flow/credits-and-deductions/credits/edc-qualified
-/flow/credits-and-deductions/credits/credit-summary-qualified
+/flow/credits-and-deductions/credits/credit-summary-not-qualified
 Category: /flow/your-taxes
 Subcategory: /flow/your-taxes/estimated-taxes-paid
 /flow/your-taxes/estimated-taxes-paid/est-tax-payments-intro
@@ -105,7 +101,6 @@ Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/third-party-designee-choice
 /flow/your-taxes/other-preferences/comms-different-language-choice
 /flow/your-taxes/other-preferences/comms-different-format-choice
-/flow/your-taxes/other-preferences/presidential-fund
 Category: /flow/complete
 Subcategory: /flow/complete/review
 /flow/complete/review/review

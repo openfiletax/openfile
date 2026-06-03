@@ -105,10 +105,9 @@ Subcategory: /flow/your-taxes/amount
 /flow/your-taxes/amount/tax-amount-number
 /flow/your-taxes/amount/tax-amount-explanation
 Subcategory: /flow/your-taxes/payment-method
-/flow/your-taxes/payment-method/payment-intro
-/flow/your-taxes/payment-method/payment-method-choice
-/flow/your-taxes/payment-method/payment-direct-debit
-/flow/your-taxes/payment-method/payment-outro
+/flow/your-taxes/payment-method/refund-intro
+/flow/your-taxes/payment-method/refund-method-choice
+/flow/your-taxes/payment-method/refund-outro
 Subcategory: /flow/your-taxes/other-preferences
 /flow/your-taxes/other-preferences/other-preferences-intro
 /flow/your-taxes/other-preferences/third-party-designee-choice

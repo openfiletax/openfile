@@ -225,7 +225,7 @@ describe(`Flow tests`, () => {
       const { factGraph } = setupFactGraph({
         ...mfjFilerData,
         [`/wasK12Educators`]: createEnumWrapper(`neither`, `/k12EducatorOptions`),
-        ...made200kIncomeData,
+        ...made210kIncomeData,
       });
       expect(
         givenFacts(factGraph).atPath(`/flow/credits-and-deductions/deductions/eligible-educator`, null, task)
@@ -265,7 +265,7 @@ describe(`Flow tests`, () => {
       it(`because of income for MFJ filing status`, ({ task }) => {
         const { factGraph } = setupFactGraph({
           ...mfjFilerData,
-          ...made200kIncomeData,
+          ...made210kIncomeData,
         });
         expect(
           givenFacts(factGraph).atPath(`/flow/credits-and-deductions/deductions/educator-expenses-summary`, null, task)

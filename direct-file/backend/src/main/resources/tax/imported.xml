@@ -53,7 +53,7 @@
       <Writable>
         <Day />
         <Limit type="Max">
-          <Day>2024-01-01</Day>
+          <Day>2025-01-01</Day>
         </Limit>
       </Writable>
     </Fact>

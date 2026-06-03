@@ -10,7 +10,7 @@ import {
 import { Path } from '../../flow/Path.js';
 import { createFlowConfig } from '../../flow/flowConfig.js';
 import flowNodes from '../../flow/flow.js';
-import { TAX_YEAR_2023 } from '../../constants/taxConstants.js';
+import { TAX_YEAR_2025 } from '../../constants/taxConstants.js';
 import makeGivenFacts from './functionalFlowUtils.js';
 import { setupFactGraph } from '../setupFactGraph.js';
 
@@ -20,19 +20,19 @@ const givenFacts = makeGivenFacts(flow);
 describe(`The \`credits\` subcategory`, () => {
   beforeAll(() => {
     vi.useFakeTimers();
-    vi.setSystemTime(new Date(`2024-02-15`));
+    vi.setSystemTime(new Date(`2026-02-15`));
   });
 
   afterAll(() => {
     // restoring date after each test run
     vi.useRealTimers();
   });
-  const THRESHOLDS = TAX_YEAR_2023.EITC_INCOME_THRESHOLDS;
+  const THRESHOLDS = TAX_YEAR_2025.EITC_INCOME_THRESHOLDS;
 
   const childDependentId = `4fa3a5a7-a9d1-43a9-a0fb-277596e70d48`;
   const nonChildDependentId = `a39ce7e2-3d09-11ee-be56-0242ac120002`;
   const dob = {
-    barelyFourteenAtStartOfYear: `2008-01-01`,
+    barelyFourteenAtStartOfYear: `2010-01-01`,
     adult: `1987-01-01`,
   };
   const childData = makeChildData(childDependentId, dob.barelyFourteenAtStartOfYear);
